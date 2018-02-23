@@ -52,40 +52,12 @@ html
               h3.features-list-item__title Diversão
               h3.features-list-item__description Assunto sério é legal. Mas nada como ter um sábado inteiro se divertindo. Estamos bolando algumas interações e brincadeiras durante o evento envolvendo a galera. Além do mais, estamos também preparando aquele happy-hour que promete. Aguardem...
 
-    section.speakers
-      .speakers-wrapper
-        .speakers-title
-          span Palestrantes &amp; Talks
-        ul.speakers-list
-          each speaker in speakers
-            li(class=`speakers-list-item speakers-list-item__status-${speaker.status}`)
-              .speakers-list-item-photo
-                img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
-              .speakers-list-item-content
-                h3.speakers-list-item__title= speaker.name
-                span.speakers-list-item__company= speaker.company
-                .speakers-list-item__social
-                  if speaker.github
-                    a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
-                  if speaker.twitter
-                    a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
-                p.speakers-list-item__talk= speaker.talk
-        .speakers-title.speakers-title__presenter
-          span Apresentação
-        ul.speakers-list.speakers-list__presenter
-          li.speakers-list-item.speakers-list-item__presenter
-            .speakers-list-item-photo
-              img.speakers-list-item__avatar(src=`assets/img/speakers/bernard.jpg`)
-            .speakers-list-item-content
-              h3.speakers-list-item__title Bernard de Luna
-              span.speakers-list-item__company bunee.io
-
     section.location
       .location-wrapper
         .location-column.content
           .location-content
             .location-content-address
-              h3.location-title Hotel Maria do Mar
+              h3.location-title Hotel Vitória Concept
               p.location-description  Rodovia João Paulo, 2285 #[br] Bairro João Paulo #[br] campinas - SC - Brasil
               a.button(href='https://goo.gl/maps/ty539BmfZM82' target='_blank') Como chegar
             .location-content-discount
@@ -115,13 +87,6 @@ html
 
     section.support
       .support-wrapper
-        h2.support-title #[span Patrocínio]
-          ul.support-list.patro
-            each sponsor in sponsors
-              li.support-item
-                a.support-link(href=`${sponsor.website}` target='_blank')
-                  img(src=`assets/img/sponsors/${sponsor.logo}`)
-
         h2.support-title #[span Apoio]
           ul.support-list.apoio
             each item in support
