@@ -1,28 +1,22 @@
-# Front in Floripa 2017
-> Front in Floripa's website
+# Front in Campinas 2018
+> Site oficial do Front in Campinas 2018
 
-# Como rodar o projeto
+## Como rodar o projeto
 
-1 - Instale o Gulp globalmente
-
-```
-[sudo] npm install -g gulp
-```
-
-2 - Instale as dependências
+1 - Instale as dependências
 
 ```
 npm install
 ```
 
-3 - Rode o projeto
+2 - Rode o projeto
 
 ```
-gulp server
+npm start
 ```
 
 OBS.: Se quiser só dar build, apenas rode:
 
 ```
-gulp build
+npm run build
 ```
