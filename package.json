@@ -1,10 +1,14 @@
 {
-  "name": "frontinfloripa2017",
-  "description": "Front in Floripa 2017",
+  "name": "frontincampinas2018",
+  "description": "Front in Campinas 2018",
   "version": "0.1.0",
   "author": {
-    "name": "Diogo Moretti",
-    "url": "diogo.pearljam@gmail.com"
+    "name": "Campinas Front-end",
+    "url": "https://campinasfrontend.com.br"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/gulp server",
+    "build": "./node_modules/.bin/gulp build"
   },
   "devDependencies": {
     "gulp": "*",
