@@ -34,56 +34,56 @@ html
           h2.header-info 12/Maio #[span &bull;] 8h #[span &bull;] #[a(href='https://goo.gl/maps/ty539BmfZM82' target='_blank') Hotel Vitória Concept]
           a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
-    section.features
-      .features-wrapper
-        .features-column-title
-          h2.features-title Por que ir no evento?
-          h2.features-description Esse ano o Front in Floripa chega em sua 5ª edição. Cada edição são 220 desenvolvedores, designers e entusiastas de toda Santa Catarina e do Brasil reunidos. Esse ano estamos trabalhando em 3 pilares para um ótimo evento.
-          a.button.button-ghost(href='https://www.youtube.com/watch?v=CLL_XGOLH4I' target='_blank') Como foi ano passado?
-        .features-column-content
-          ul.features-list
-            li.features-list-item
-              h3.features-list-item__title Interação
-              h3.features-list-item__description Sabemos que um evento não é apenas palestra. Na verdade apostamos em #[strong PESSOAS]. E esse ano teremos várias atividades e espaços que proporcionam a melhor e maior #[strong interação] possível entre os participantes.
-            li.features-list-item
-              h3.features-list-item__title Conhecimento
-              h3.features-list-item__description O Front in Floripa sempre teve a sorte de ter os melhores participantes e palestrantes. Sempre trazendo tendências e palestras práticas o aprendizado é garantido, tanto nas talks como nas conversas entre o pessoal =]
-            li.features-list-item
-              h3.features-list-item__title Diversão
-              h3.features-list-item__description Assunto sério é legal. Mas nada como ter um sábado inteiro se divertindo. Estamos bolando algumas interações e brincadeiras durante o evento envolvendo a galera. Além do mais, estamos também preparando aquele happy-hour que promete. Aguardem...
+    //- section.features
+    //-   .features-wrapper
+    //-     .features-column-title
+    //-       h2.features-title Por que ir no evento?
+    //-       h2.features-description Esse ano o Front in Floripa chega em sua 5ª edição. Cada edição são 220 desenvolvedores, designers e entusiastas de toda Santa Catarina e do Brasil reunidos. Esse ano estamos trabalhando em 3 pilares para um ótimo evento.
+    //-       a.button.button-ghost(href='https://www.youtube.com/watch?v=CLL_XGOLH4I' target='_blank') Como foi ano passado?
+    //-     .features-column-content
+    //-       ul.features-list
+    //-         li.features-list-item
+    //-           h3.features-list-item__title Interação
+    //-           h3.features-list-item__description Sabemos que um evento não é apenas palestra. Na verdade apostamos em #[strong PESSOAS]. E esse ano teremos várias atividades e espaços que proporcionam a melhor e maior #[strong interação] possível entre os participantes.
+    //-         li.features-list-item
+    //-           h3.features-list-item__title Conhecimento
+    //-           h3.features-list-item__description O Front in Floripa sempre teve a sorte de ter os melhores participantes e palestrantes. Sempre trazendo tendências e palestras práticas o aprendizado é garantido, tanto nas talks como nas conversas entre o pessoal =]
+    //-         li.features-list-item
+    //-           h3.features-list-item__title Diversão
+    //-           h3.features-list-item__description Assunto sério é legal. Mas nada como ter um sábado inteiro se divertindo. Estamos bolando algumas interações e brincadeiras durante o evento envolvendo a galera. Além do mais, estamos também preparando aquele happy-hour que promete. Aguardem...
 
-    section.location
-      .location-wrapper
-        .location-column.content
-          .location-content
-            .location-content-address
-              h3.location-title Hotel Vitória Concept
-              p.location-description  Rodovia João Paulo, 2285 #[br] Bairro João Paulo #[br] campinas - SC - Brasil
-              a.button(href='https://goo.gl/maps/ty539BmfZM82' target='_blank') Como chegar
-            .location-content-discount
-              p.location-content-discount__text #[strong.up Tá afim de ficar no hotel?] Nós fizemos uma parceria com o hotel e conseguimos um #[strong DESCONTO \o/] para vocês. Lembramos que a tarifa do site é variável e os valores mudam de acordo com a demanda. O Front in Floripa não garante quartos disponíveis. Além disso, a reserva é toda de responsabilidade do hóspede junto ao hotel. Coloque o cupom no site e garanta seu quarto de frente para o mar ;)
-              span.location-content-discount__code FINF2636
-              a.button(href='http://mariadomar.com.br' target='_blank') Reservar
+    //- section.location
+    //-   .location-wrapper
+    //-     .location-column.content
+    //-       .location-content
+    //-         .location-content-address
+    //-           h3.location-title Hotel Vitória Concept
+    //-           p.location-description  Rodovia João Paulo, 2285 #[br] Bairro João Paulo #[br] campinas - SC - Brasil
+    //-           a.button(href='https://goo.gl/maps/ty539BmfZM82' target='_blank') Como chegar
+    //-         .location-content-discount
+    //-           p.location-content-discount__text #[strong.up Tá afim de ficar no hotel?] Nós fizemos uma parceria com o hotel e conseguimos um #[strong DESCONTO \o/] para vocês. Lembramos que a tarifa do site é variável e os valores mudam de acordo com a demanda. O Front in Floripa não garante quartos disponíveis. Além disso, a reserva é toda de responsabilidade do hóspede junto ao hotel. Coloque o cupom no site e garanta seu quarto de frente para o mar ;)
+    //-           span.location-content-discount__code FINF2636
+    //-           a.button(href='http://mariadomar.com.br' target='_blank') Reservar
 
         .location-column.photo
 
-    section.schedule
-      .speakers-title
-        span Programação
-      ul.schedule-list
-        each event in schedule
-          li(class=`schedule-list-item schedule-list-item--${event.type}`)
-            .schedule-list-item-time
-              span.schedule-list-item__time= event.time
-            .schedule-list-item-content
-              h3.schedule-list-item__title= event.title
-              p.schedule-list-item__talk= event.talk
-      p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
+    //- section.schedule
+    //-   .speakers-title
+    //-     span Programação
+    //-   ul.schedule-list
+    //-     each event in schedule
+    //-       li(class=`schedule-list-item schedule-list-item--${event.type}`)
+    //-         .schedule-list-item-time
+    //-           span.schedule-list-item__time= event.time
+    //-         .schedule-list-item-content
+    //-           h3.schedule-list-item__title= event.title
+    //-           p.schedule-list-item__talk= event.talk
+    //-   p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
 
-    section.tickets
-      .tickets-wrapper
-        h2.tickets-title Ingresso
-        a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
+    //- section.tickets
+    //-   .tickets-wrapper
+    //-     h2.tickets-title Ingresso
+    //-     a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
     section.support
       .support-wrapper
@@ -97,7 +97,7 @@ html
     footer.footer
       .footer-wrapper
         .footer-column.coc
-          a.footer-link(href='https://braziljs.org/coc' target='_blank') Código de Conduta
+          a.footer-link(href='https://campinasfrontend.com.br/#conduct' target='_blank') Código de Conduta
         .footer-column.email
           span.footer-email contato@frontincampinas.com.br
         .footer-column.social
