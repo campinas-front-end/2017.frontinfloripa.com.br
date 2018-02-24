@@ -1160,25 +1160,7 @@ body {
 .support {
   position: relative;
   background: #fff;
-  padding: 10em 0 25em;
-}
-.support:after {
-  content: '';
-  width: 100%;
-  height: 350px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-image: url("../img/florianopolis-skyline.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  z-index: 1;
-}
-@media only screen and (max-width: 580px) {
-  .support:after {
-    background-size: 300%;
-  }
+  padding: 10em 0;
 }
 .support-wrapper {
   max-width: 1040px;
@@ -1219,7 +1201,7 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  padding: 5em 0 10em;
+  padding: 5em 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
