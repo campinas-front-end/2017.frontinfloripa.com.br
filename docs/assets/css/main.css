@@ -412,8 +412,8 @@ body {
 .header-logo {
   margin: 0 auto;
   padding: 0;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   text-indent: -9999em;
   background-image: url("../svg/logotipo-campinas-front-end-VERTICAL-branco-cores.svg");
   background-position: center center;
