@@ -3,6 +3,10 @@
   website: "https://www.sympla.com.br"
   logo: "sympla.png"
 -
+  name: "BrazilJS"
+  website: "http://braziljs.org/"
+  logo: "braziljs.png"
+-
   name: "GDG Campinas"
   website: "https://gdg-campinas.github.io/"
   logo: "gdg-campinas.png"
