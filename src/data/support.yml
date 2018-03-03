@@ -1,8 +1,32 @@
 -
+  name: "Caelum"
+  website: "https://www.caelum.com.br"
+  logo: "caelum.png"
+-
+  name: "Alura"
+  website: "https://www.alura.com.br"
+  logo: "alura.png"
+-
+  name: "Cada do Código"
+  website: "https://www.casadocodigo.com.br"
+  logo: "casa_do_codigo.png"
+-
   name: "Sympla"
   website: "https://www.sympla.com.br"
   logo: "sympla.png"
 -
+  name: "BrazilJS"
+  website: "http://braziljs.org/"
+  logo: "braziljs.png"
+-
   name: "GDG Campinas"
   website: "https://gdg-campinas.github.io/"
   logo: "gdg-campinas.png"
+-
+  name: "Dev Na Estrada"
+  website: "https://devnaestrada.com.br/"
+  logo: "dne.png"
+-
+  name: "Imasters"
+  website: "https://imasters.com.br/"
+  logo: "imasters.png"

@@ -24,8 +24,10 @@ html
     meta(name='twitter:site' content='@cpsfrontend')
     meta(name='twitter:image' content='http://www.frontincampinas.com.br/assets/img/social.png')
 
+    link(href="/assets/img/favicon.png" rel="shortcut icon")
     link(href='//fonts.googleapis.com/css?family=Work+Sans:300,400,600,700' rel='stylesheet')
     link(rel='stylesheet' href='assets/css/main.css')
+    link(rel="canonical" href="https://frontincampinas.com.br")
   body
     header.header
       .header-wrapper
@@ -56,6 +58,34 @@ html
     //-         li.features-list-item
     //-           h3.features-list-item__title Diversão
     //-           h3.features-list-item__description Assunto sério é legal. Mas nada como ter um sábado inteiro se divertindo. Estamos bolando algumas interações e brincadeiras durante o evento envolvendo a galera. Além do mais, estamos também preparando aquele happy-hour que promete. Aguardem...
+
+    section.speakers
+      .speakers-wrapper
+        //- .speakers-title
+        //-   span Palestrantes &amp; Talks
+        //- ul.speakers-list
+        //-   each speaker in speakers
+        //-     li(class=`speakers-list-item speakers-list-item__status-${speaker.status}`)
+        //-       .speakers-list-item-photo
+        //-         img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
+        //-       .speakers-list-item-content
+        //-         h3.speakers-list-item__title= speaker.name
+        //-         span.speakers-list-item__company= speaker.company
+        //-         .speakers-list-item__social
+        //-           if speaker.github
+        //-             a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
+        //-           if speaker.twitter
+        //-             a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
+        //-         p.speakers-list-item__talk= speaker.talk
+        .speakers-title.speakers-title__presenter
+          span Apresentação
+        ul.speakers-list.speakers-list__presenter
+          li.speakers-list-item.speakers-list-item__presenter
+            .speakers-list-item-photo
+              img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
+            .speakers-list-item-content
+              h3.speakers-list-item__title Keilla Menezes
+              span.speakers-list-item__company @keillamenezes_
 
     //- section.location
     //-   .location-wrapper
@@ -92,6 +122,12 @@ html
 
     section.support
       .support-wrapper
+        //- h2.support-title #[span Patrocínio]
+        //-   ul.support-list.patro
+        //-     each sponsor in sponsors
+        //-       li.support-item
+        //-         a.support-link(href=`${sponsor.website}` target='_blank')
+        //-           img(src=`assets/img/sponsors/${sponsor.logo}`)
         h2.support-title #[span Apoio]
           ul.support-list.apoio
             each item in support
@@ -113,3 +149,10 @@ html
               a.footer-social-link.facebook(href='https://www.facebook.com/CampinasFrontend' target='_blank') Facebook
             li.footer-social-item
               a.footer-social-link.github(href='https://github.com/campinas-front-end' target='_blank') Github
+
+script(async src='https://www.googletagmanager.com/gtag/js?id=UA-113078834-1')
+script.
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-113078834-1');

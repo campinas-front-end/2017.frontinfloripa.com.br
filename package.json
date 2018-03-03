@@ -23,6 +23,7 @@
     "stylus": "^0.54.5"
   },
   "dependencies": {
-    "gulp-plumber": "~0.5.6"
+    "gulp-plumber": "~0.5.6",
+    "npm": "^5.7.1"
   }
 }
