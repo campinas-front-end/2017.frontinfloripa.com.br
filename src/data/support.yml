@@ -1,4 +1,16 @@
 -
+  name: "Caelum"
+  website: "https://www.caelum.com.br"
+  logo: "caelum.png"
+-
+  name: "Alura"
+  website: "https://www.alura.com.br"
+  logo: "alura.png"
+-
+  name: "Cada do Código"
+  website: "https://www.casadocodigo.com.br"
+  logo: "casa_do_codigo.png"
+-
   name: "Sympla"
   website: "https://www.sympla.com.br"
   logo: "sympla.png"
