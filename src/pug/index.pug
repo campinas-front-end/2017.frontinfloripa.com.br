@@ -61,22 +61,22 @@ html
 
     section.speakers
       .speakers-wrapper
-        //- .speakers-title
-        //-   span Palestrantes &amp; Talks
-        //- ul.speakers-list
-        //-   each speaker in speakers
-        //-     li(class=`speakers-list-item speakers-list-item__status-${speaker.status}`)
-        //-       .speakers-list-item-photo
-        //-         img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
-        //-       .speakers-list-item-content
-        //-         h3.speakers-list-item__title= speaker.name
-        //-         span.speakers-list-item__company= speaker.company
-        //-         .speakers-list-item__social
-        //-           if speaker.github
-        //-             a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
-        //-           if speaker.twitter
-        //-             a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
-        //-         p.speakers-list-item__talk= speaker.talk
+        .speakers-title
+          span Palestrantes &amp; Talks
+        ul.speakers-list
+          each speaker in speakers
+            li(class=`speakers-list-item speakers-list-item__status-${speaker.status}`)
+              .speakers-list-item-photo
+                img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
+              .speakers-list-item-content
+                h3.speakers-list-item__title= speaker.name
+                span.speakers-list-item__company= speaker.company
+                .speakers-list-item__social
+                  if speaker.github
+                    a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
+                  if speaker.twitter
+                    a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
+                p.speakers-list-item__talk= speaker.talk
         .speakers-title.speakers-title__presenter
           span Apresentação
         ul.speakers-list.speakers-list__presenter
@@ -84,7 +84,7 @@ html
             .speakers-list-item-photo
               img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
             .speakers-list-item-content
-              h3.speakers-list-item__title Keilla Menezes
+              h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
               a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
 
     //- section.location
