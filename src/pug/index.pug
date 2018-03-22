@@ -122,12 +122,12 @@ html
 
     section.support
       .support-wrapper
-        //- h2.support-title #[span Patrocínio]
-        //-   ul.support-list.patro
-        //-     each sponsor in sponsors
-        //-       li.support-item
-        //-         a.support-link(href=`${sponsor.website}` target='_blank')
-        //-           img(src=`assets/img/sponsors/${sponsor.logo}`)
+        h2.support-title #[span Patrocínio]
+          ul.support-list.patro
+            each sponsor in sponsors
+              li.support-item
+                a.support-link(href=`${sponsor.website}` target='_blank')
+                  img(src=`assets/img/sponsors/${sponsor.logo}`)
         h2.support-title #[span Apoio]
           ul.support-list.apoio
             each item in support
