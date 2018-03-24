@@ -24,3 +24,16 @@
   github: "rv-psilveira"
   talk: "Recompose na prática"
   status: "on"
+-
+  name: "Larissa Abreu"
+  avatar: "larissa.jpg"
+  twitter: "TheSweet_Lari"
+  github: "LarissaAbreu"
+  talk: "A magia dos componentes nativos independente de frameworks"
+  status: "on"
+-
+  name: "Simone Amorim"
+  avatar: "simone.jpg"
+  twitter: "samorim02"
+  talk: "Montando layouts em um mini game chamado Browser"
+  status: "on"
