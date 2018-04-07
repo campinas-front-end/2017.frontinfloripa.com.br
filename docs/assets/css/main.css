@@ -537,9 +537,6 @@ body {
   margin: 0;
   font-weight: bold;
   color: #f0f0f0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: alpha(opacity=40);
-  opacity: 0.4;
 }
 @media only screen and (max-width: 580px) {
   .features-list-item:before {
