@@ -4,12 +4,14 @@
   twitter: "mjcoffeeholick"
   github: "mjcoffeeholick"
   talk: "Como ter uma comunidade mais inclusiva"
+  talk_description: "A inclusão e diversidade não acontecem do nada e nem magicamente. Pra ter um cenário diverso e mais justo para todos organicamente, precisamos mudar pequenas atitudes que temos ou deixamos ter em nossa comunidade. Baseado em estudos, métricas e vivência, vou abordar uma lista de coisas que são possíveis serem implementadas para garantir um ambiente mais justo para todos e mais diverso de verdade."
   status: "on"
 -
   name: "Bernard De Luna"
   avatar: "bernard.jpg"
   twitter: "bernarddeluna"
   talk: "Vivendo como um porco-espinho"
+  talk_description: "Quantas linhas de código você escreve por dia? Como você performa em reuniões? Quais frameworks modernos você tem estudado todo mês? Você já trabalha com metodologias ágeis? UAU! Que tal a gente parar de falar sobre coisas técnicas e começar a falar sobre você e sua carreira?"
   status: "on"
 -
   name: "Maria Clara"
@@ -17,12 +19,14 @@
   twitter: "olarclara"
   github: "olarclara"
   talk: "Construindo uma web melhor: Ferramentas e testes de acessibilidade"
+  talk_description: "Acessibilidade não é só sobre leitores de tela, com cerca de 15% da população mundial tendo algum tipo de deficiência, construir uma web melhor é fazer com que 1 bilhão de pessoas tenham acesso a plataformas, produtos e informações. Nessa talk, mostro algumas ferramentas úteis e como fazer testes automatizados para assegurar que sua aplicação é acessível."
   status: "on"
 -
   name: "Paulo Silveira"
   avatar: "paulo.jpg"
   github: "rv-psilveira"
   talk: "Recompose na prática"
+  talk_description: "Carrossel, slideshow e afins estão presentes na maioria dos websites atualmente. E se adicionarmos a isso, React + Recompose? Nessa talk, vamos codar juntos passo a passo uma biblioteca de carrossel voltada para React utilizando Recompose como higher-order component."
   status: "on"
 -
   name: "Larissa Abreu"
@@ -30,6 +34,7 @@
   twitter: "TheSweet_Lari"
   github: "LarissaAbreu"
   talk: "A magia dos componentes nativos independente de frameworks"
+  talk_description: "Vocês já se perguntaram por que a galera fica sofrendo para decidir se vai utilizar Angular, React ou Vue em seus projetos? E se alguém te dissesse que você pode criar seus próprios componentes encapsulados e utilizá-los em qualquer framework sem nenhum problema? Nessa talk irei compartilhar um pouco do que estou aprendendo trabalhando com web components nativos em produção. E lembre-se: Malfeito, feito."
   status: "on"
 -
   name: "Simone Amorim"
@@ -37,4 +42,5 @@
   twitter: "samorim02"
   github: "simoneas02"
   talk: "Montando layouts em um mini game chamado Browser"
+  talk_description: "Vamos entrar em um jogo divertido, reviveremos o passado desde as tabelas até um futuro, que na verdade já é o presente chamado CSS Grid Layout. Em cada jogada você vai entender que CSS Grid é uma realidade que vai revolucionar a forma como você desenvolve Layouts.O poder estará em suas mãos, e é claro que você não vai querer ficar pra trás não é mesmo? Let´s go."
   status: "on"

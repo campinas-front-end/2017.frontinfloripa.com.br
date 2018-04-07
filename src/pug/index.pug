@@ -46,7 +46,7 @@ html
     //-     .features-column-title
     //-       h2.features-title Por que ir no evento?
     //-       h2.features-description Esse ano o Front in Floripa chega em sua 5ª edição. Cada edição são 220 desenvolvedores, designers e entusiastas de toda Santa Catarina e do Brasil reunidos. Esse ano estamos trabalhando em 3 pilares para um ótimo evento.
-    //-       a.button.button-ghost(href='https://www.youtube.com/watch?v=CLL_XGOLH4I' target='_blank') Como foi ano passado?
+
     //-     .features-column-content
     //-       ul.features-list
     //-         li.features-list-item
@@ -77,28 +77,25 @@ html
                   if speaker.twitter
                     a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
                 p.speakers-list-item__talk= speaker.talk
+                p.speakers-list-item__talk-description= speaker.talk_description
         .speakers-title.speakers-title__presenter
           span Apresentação
         ul.speakers-list.speakers-list__presenter
           li.speakers-list-item.speakers-list-item__presenter
-            .speakers-list-item-photo
+            .speakers-list-item-photo__presenter
               img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
             .speakers-list-item-content
               h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
               a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
 
-    //- section.location
-    //-   .location-wrapper
-    //-     .location-column.content
-    //-       .location-content
-    //-         .location-content-address
-    //-           h3.location-title Hotel Vitória Concept
-    //-           p.location-description  Rodovia João Paulo, 2285 #[br] Bairro João Paulo #[br] campinas - SC - Brasil
-    //-           a.button(href='https://goo.gl/maps/ty539BmfZM82' target='_blank') Como chegar
-    //-         .location-content-discount
-    //-           p.location-content-discount__text #[strong.up Tá afim de ficar no hotel?] Nós fizemos uma parceria com o hotel e conseguimos um #[strong DESCONTO \o/] para vocês. Lembramos que a tarifa do site é variável e os valores mudam de acordo com a demanda. O Front in Floripa não garante quartos disponíveis. Além disso, a reserva é toda de responsabilidade do hóspede junto ao hotel. Coloque o cupom no site e garanta seu quarto de frente para o mar ;)
-    //-           span.location-content-discount__code FINF2636
-    //-           a.button(href='http://mariadomar.com.br' target='_blank') Reservar
+    section.location
+      .location-wrapper
+        .location-column.content
+          .location-content
+            .location-content-address
+              h3.location-title Vitória Hotel Concept
+              p.location-description  Av. José de Souza Campos, 425 #[br] Bairro Nova Campinas #[br] Campinas - SP
+              a.button(href='https://goo.gl/maps/eZvhV5PUYMn' target='_blank') Como chegar
 
         .location-column.photo
 

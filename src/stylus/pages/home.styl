@@ -311,7 +311,7 @@
       position relative
       margin-bottom 4em
       background-color #fff
-      width 48%
+      width 100%
       padding 1.6em
       display flex
       overflow hidden
@@ -335,6 +335,7 @@
 
       &__presenter
         background $color-primary-alt
+        max-width 60%
 
         .speakers-list-item-content
           display flex
@@ -356,7 +357,12 @@
           border-color $color-primary-alt - 20%
 
       &-photo
+        flex-basis 20%
+        align-self center
+
+      &-photo__presenter
         flex-basis 35%
+        align-self center
 
       &-content
         flex 1
@@ -411,6 +417,12 @@
         font-size 2.2em
         margin 0
         line-height 1.1
+
+      &__talk-description
+        color $color-default
+        font-size 1.6em
+        margin .8em 0
+        line-height 1.6
 
 .location
   &-wrapper
