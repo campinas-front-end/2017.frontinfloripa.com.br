@@ -44,3 +44,11 @@
   talk: "Montando layouts em um mini game chamado Browser"
   talk_description: "Vamos entrar em um jogo divertido, reviveremos o passado desde as tabelas até um futuro, que na verdade já é o presente chamado CSS Grid Layout. Em cada jogada você vai entender que CSS Grid é uma realidade que vai revolucionar a forma como você desenvolve Layouts.O poder estará em suas mãos, e é claro que você não vai querer ficar pra trás não é mesmo? Let´s go."
   status: "on"
+-
+  name: "Eduardo Cuducos"
+  avatar: "cuducos.jpg"
+  twitter: "cuducos"
+  github: "cuducos"
+  talk: "Tecnologia cívica: o que importa são as perguntas"
+  talk_description: "O Brasil é um país que tem muitos dados abertos – nossa Lei de Acesso à Informação é referência mundial. Mas isso, por si só, não dá a força necessária para projetos de tecnologia cívica gerar impacto. Essa palestra traz a sociologia e a filosofia para discutir quais elementos de projetos de tecnologia aumentam o potencial de impacto social e de engajamento de projetos de tecnologia cívica. O foco tem que ser não apenas em dar roupagem nova aos dados abertos, mas em usá-los para fazer (e responder) perguntas sobre como o governo tem cuidado da sociedade."
+  status: "on"

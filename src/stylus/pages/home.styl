@@ -235,7 +235,6 @@
         margin 0
         font-weight bold
         color #f0f0f0
-        opacity .4
 
         +below('phone')
           display none
@@ -317,6 +316,7 @@
       overflow hidden
 
       +below('phone')
+        display block
         width 98%
 
       &__status-off
@@ -360,6 +360,10 @@
         flex-basis 20%
         align-self center
 
+        +below('phone')
+          width 80%
+          margin 0 auto 1.6em
+
       &-photo__presenter
         flex-basis 35%
         align-self center
@@ -367,6 +371,9 @@
       &-content
         flex 1
         padding-left 2em
+
+        +below('phone')
+          padding 0
 
       &__avatar
         max-width 100%
@@ -377,6 +384,9 @@
         color $color-primary
         margin 0
         letter-spacing -.03em
+
+        +below('phone')
+          text-align center
 
         &.speakers-list__presenter-title
           color #fff
@@ -410,6 +420,9 @@
 
           &.twitter
             background-image url($path-svg + 'icon-twitter.svg')
+
+        +below('phone')
+          text-align center
 
       &__talk
         color $color-primary
