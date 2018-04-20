@@ -1246,6 +1246,7 @@ body {
 }
 .support-list.apoio .support-link img {
   max-width: 200px;
+  width: 200px;
 }
 .support-item {
   margin: 3.5em 1em;
