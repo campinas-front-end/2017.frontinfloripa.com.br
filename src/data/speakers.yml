@@ -52,3 +52,9 @@
   talk: "Tecnologia cívica: o que importa são as perguntas"
   talk_description: "O Brasil é um país que tem muitos dados abertos – nossa Lei de Acesso à Informação é referência mundial. Mas isso, por si só, não dá a força necessária para projetos de tecnologia cívica gerar impacto. Essa palestra traz a sociologia e a filosofia para discutir quais elementos de projetos de tecnologia aumentam o potencial de impacto social e de engajamento de projetos de tecnologia cívica. O foco tem que ser não apenas em dar roupagem nova aos dados abertos, mas em usá-los para fazer (e responder) perguntas sobre como o governo tem cuidado da sociedade."
   status: "on"
+-
+  name: "Lucas Germano e Leonardo Almeida"
+  avatar: "lucas-leonardo.jpg"
+  talk: "Não existe nada de novo sob o Sol!"
+  talk_description: "Novas ferramentas, antigos problemas e conceitos clássicos. Por mais que sejam lançadas novas ferramentas e bibliotecas, os conceitos de construção das mesmas permanecem intactos ao longo dos anos. Mostraremos um paralelo entre a estruturação dos frameworks mais populares e o uso que fazem de conceitos como GoF Design Patterns e SOLID principles dentre outros. "
+  status: "on"
