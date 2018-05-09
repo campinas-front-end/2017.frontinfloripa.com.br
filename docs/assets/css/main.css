@@ -1133,9 +1133,6 @@ body {
 }
 .tickets {
   padding: 10em 0;
-  background-image: url("../img/audience.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
   min-height: 600px;
 }

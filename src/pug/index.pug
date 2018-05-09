@@ -99,23 +99,23 @@ html
 
         .location-column.photo
 
-    //- section.schedule
-    //-   .speakers-title
-    //-     span Programação
-    //-   ul.schedule-list
-    //-     each event in schedule
-    //-       li(class=`schedule-list-item schedule-list-item--${event.type}`)
-    //-         .schedule-list-item-time
-    //-           span.schedule-list-item__time= event.time
-    //-         .schedule-list-item-content
-    //-           h3.schedule-list-item__title= event.title
-    //-           p.schedule-list-item__talk= event.talk
-    //-   p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
+    section.schedule
+      .speakers-title
+        span Programação
+      ul.schedule-list
+        each event in schedule
+          li(class=`schedule-list-item schedule-list-item--${event.type}`)
+            .schedule-list-item-time
+              span.schedule-list-item__time= event.time
+            .schedule-list-item-content
+              h3.schedule-list-item__title= event.title
+              p.schedule-list-item__talk= event.talk
+      p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
 
-    //- section.tickets
-    //-   .tickets-wrapper
-    //-     h2.tickets-title Ingresso
-    //-     a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
+    section.tickets
+      .tickets-wrapper
+        h2.tickets-title Ingresso
+        a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
     section.support
       .support-wrapper

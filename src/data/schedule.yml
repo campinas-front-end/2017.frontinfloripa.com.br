@@ -7,72 +7,62 @@
   type: other
   title: "Abertura do Evento"
 -
-  time: 9h
+  time: 9h20
   type: talk
-  title: "Mario Souto"
-  talk: "O acoplamento, a Mensageria e o Redux no Front-end"
+  title: "Larissa Abreu"
+  talk: "A magia dos componentes nativos independente de frameworks"
 -
-  time: 9h
+  time: 10h
   type: talk
-  title: "Paulo Duarte"
-  talk: "What is WebAssembly?"
+  title: "Lucas Germano e Leonardo Almeida"
+  talk: "Não existe nada de novo sob o Sol!"
 -
-  time: 10h15
+  time: 10h35
   type: other
   title: "Coffee Break"
 -
-  time: 9h
+  time: 11h10
   type: talk
-  title: "Rodrigo Branas"
-  talk: "Do callback ao async/await"
+  title: "Simone Amorim"
+  talk: "Montando layouts em um mini game chamado Browser"
 -
-  time: 12h
+  time: 11h45
+  type: talk
+  title: "Paulo Silveira"
+  talk: "Recompose na prática"
+-
+  time: 12h30
   type: other
   title: "Almoço"
 -
-  time: 13h50
+  time: 14h
   type: other
   title: "Abertura da Tarde"
 -
-  time: 9h
+  time: 14h30
   type: talk
-  title: "Vinicius Neves"
-  talk: "Como o Javascript funciona"
+  title: "Bernard De Luna"
+  talk: "Vivendo como um porco-espinho"
 -
-  time: 9h
+  time: 15h05
   type: talk
-  title: "Geisy Domiciano"
-  talk: "Como faz pra trampar fora?"
+  title: "Maria Clara"
+  talk: "Construindo uma web melhor: Ferramentas e testes de acessibilidade"
 -
-  time: 9h
-  type: talk
-  title: "Fernando Daciuk"
-  talk: "The front-end world: now what?"
--
-  time: 9h
-  type: talk
-  title: "Luís Felipe Souza"
-  talk: "Transformando o seu site em um PWA"
--
-  time: 16h20
+  time: 16h
   type: other
   title: "Coffee Break"
 -
-  time: 9h
+  time: 16h35
   type: talk
-  title: "Fábio Vedovelli"
-  talk: "Vue.js: \"pau pra toda obra\""
+  title: "Eduardo Cuducos"
+  talk: "Tecnologia cívica: o que importa são as perguntas"
 -
-  time: 9h
+  time: 17h20
   type: talk
-  title: "Rosicleia Frasson"
-  talk: "Não subestime seu CSS"
+  title: "Alda Rocha"
+  talk: "Como ter uma comunidade mais inclusiva"
 -
-  time: 9h
-  type: talk
-  title: "Vinicius Moraes"
-  talk: "Animações avançadas com GSAP"
--
-  time: 18h30
+  time: 18h
   type: other
   title: "Encerramento"
