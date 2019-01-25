@@ -6,17 +6,17 @@
 1 - Instale as dependências
 
 ```
-npm install
+yarn install
 ```
 
 2 - Rode o projeto
 
 ```
-npm start
+yarn start
 ```
 
 OBS.: Se quiser só dar build, apenas rode:
 
 ```
-npm run build
+yarn run build
 ```
