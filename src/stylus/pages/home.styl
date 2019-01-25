@@ -205,7 +205,7 @@
       font-size 5em
 
   &-description
-    color #777
+    color $color-text
     font-weight normal
     font-size 1.6em
     margin 2em 0
@@ -234,7 +234,7 @@
         line-height 1
         margin 0
         font-weight bold
-        color #f0f0f0
+        color lighten($color-default, 60%)
 
         +below('phone')
           display none
@@ -254,7 +254,7 @@
         font-weight normal
         font-size 1.5em
         line-height 1.6
-        color #ccc
+        color $color-text
 
 .speakers
   position relative
