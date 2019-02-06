@@ -1,7 +1,13 @@
 event:
-  name: Front in Campinas 2018
+  name: Front in Campinas 2019
   description: Maior evento front-end de Campinas
   url: "http://www.frontincampinas.com.br"
 
 tickets:
   url: "https://www.sympla.com.br/front-in-campinas__248102"
+
+sponsorship:
+  url: "https://goo.gl/forms/FVl2qebkoJ91nQIi1"
+
+papers:
+  url: "https://goo.gl/forms/qScfOVKYIMODNfsu1"

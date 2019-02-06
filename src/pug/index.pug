@@ -8,7 +8,7 @@ html
     title #{config.event.name} &bull; #{config.event.description}
 
     meta(name='description' content=`${config.event.name} - ${config.event.description}`)
-    meta(name='keywords' content='desenvolvedor frontend, desenvolvedor front-end, front-end em campinas, eventos de front-end em campinas, frontincampinas, frontincampinas 2018, eventos de desenvolvimento, desenvolvimento, front-end, html, html5, css3, css, javascript, js')
+    meta(name='keywords' content='desenvolvedor frontend, desenvolvedor front-end, front-end em campinas, eventos de front-end em campinas, frontincampinas, frontincampinas 2019, eventos de desenvolvimento, desenvolvimento, front-end, html, html5, css3, css, javascript, js')
 
     meta(property='og:locale' content='pt_BR')
     meta(property='og:url' content=`${config.event.url}`)
@@ -33,18 +33,18 @@ html
       .header-wrapper
         .header-content
           h1.header-logo #{config.event.name}
-          h2.header-info 12/Maio/2018 #[span &bull;] 8h #[span &bull;] #[a(href='https://goo.gl/maps/67rKXjWTvqM2' target='_blank') Hotel Vitória Concept]
-          a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
+          h2.header-info 04/Maio/2019 #[span &bull;] 8h #[span &bull;] #[a(href='https://goo.gl/maps/67rKXjWTvqM2' target='_blank') Hotel Vitória Concept]
+          //- a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
           div.header-support
-            a.header-support__link(href='https://goo.gl/forms/IR9Mhdht0CFquKFE2' target='_blank') Quero palestrar
+            a.header-support__link(href=`${config.papers.url}` target='_blank') Quero palestrar
             span.header-support__divisor |
-            a.header-support__link(href='https://goo.gl/forms/ReT51uTh8WHwajvj2' target='_blank') Quero patrocinar
+            a.header-support__link(href=`${config.sponsorship.url}` target='_blank') Quero patrocinar
 
     section.features
       .features-wrapper
         .features-column-title
-          h2.features-title O que é o Front In Campinas?
+          h2.features-title O que é o Front in Campinas?
           h2.features-description É um evento para compartilhar o conhecimento entre a comunidade, com o intuito de fortalecê-la ainda mais. Será um espaço para interação e diversão, servindo de inspiração para aqueles que estão começando e renovando as energias daqueles que precisam.
 
         .features-column-content
@@ -54,39 +54,39 @@ html
               h3.features-list-item__description O Front in Campinas contará com palestrantes de alto nível que apresentarão conteúdos que abrangem não só a parte técnica do front-end, mas também a carreira de qualquer pessoa da área de TI.
             li.features-list-item
               h3.features-list-item__title Objetivo
-              h3.features-list-item__description Prover um espaço para a interação entre desenvolvedores e empresas, em um ambiente inclusivo para todes.
+              h3.features-list-item__description Prover um espaço para a interação entre desenvolvedores e empresas, em um ambiente inclusivo para todos.
             li.features-list-item
               h3.features-list-item__title Para quem?
               h3.features-list-item__description Todas as pessoas em todas as áreas de desenvolvimento podem participar do evento. Além do networking, elas poderão aprender e conversar sobre carreira e softskils necessários para toda a área de tecnologia.
 
-    section.speakers
-      .speakers-wrapper
-        .speakers-title
-          span Palestrantes &amp; Talks
-        ul.speakers-list
-          each speaker in speakers
-            li(class=`speakers-list-item speakers-list-item__status-${speaker.status}`)
-              .speakers-list-item-photo
-                img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
-              .speakers-list-item-content
-                h3.speakers-list-item__title= speaker.name
-                span.speakers-list-item__company= speaker.company
-                .speakers-list-item__social
-                  if speaker.github
-                    a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
-                  if speaker.twitter
-                    a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
-                p.speakers-list-item__talk= speaker.talk
-                p.speakers-list-item__talk-description= speaker.talk_description
-        .speakers-title.speakers-title__presenter
-          span Apresentação
-        ul.speakers-list.speakers-list__presenter
-          li.speakers-list-item.speakers-list-item__presenter
-            .speakers-list-item-photo__presenter
-              img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
-            .speakers-list-item-content
-              h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
-              a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
+    //- section.speakers
+    //-   .speakers-wrapper
+    //-     .speakers-title
+    //-       span Palestrantes &amp; Talks
+    //-     ul.speakers-list
+    //-       each speaker in speakers
+    //-         li(class=`speakers-list-item speakers-list-item__status-${speaker.status}`)
+    //-           .speakers-list-item-photo
+    //-             img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
+    //-           .speakers-list-item-content
+    //-             h3.speakers-list-item__title= speaker.name
+    //-             span.speakers-list-item__company= speaker.company
+    //-             .speakers-list-item__social
+    //-               if speaker.github
+    //-                 a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
+    //-               if speaker.twitter
+    //-                 a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
+    //-             p.speakers-list-item__talk= speaker.talk
+    //-             p.speakers-list-item__talk-description= speaker.talk_description
+    //-     .speakers-title.speakers-title__presenter
+    //-       span Apresentação
+    //-     ul.speakers-list.speakers-list__presenter
+    //-       li.speakers-list-item.speakers-list-item__presenter
+    //-         .speakers-list-item-photo__presenter
+    //-           img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
+    //-         .speakers-list-item-content
+    //-           h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
+    //-           a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
 
     section.location
       .location-wrapper
@@ -99,38 +99,38 @@ html
 
         .location-column.photo
 
-    section.schedule
-      .speakers-title
-        span Programação
-      ul.schedule-list
-        each event in schedule
-          li(class=`schedule-list-item schedule-list-item--${event.type}`)
-            .schedule-list-item-time
-              span.schedule-list-item__time= event.time
-            .schedule-list-item-content
-              h3.schedule-list-item__title= event.title
-              p.schedule-list-item__talk= event.talk
-      p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
+    //- section.schedule
+    //-   .speakers-title
+    //-     span Programação
+    //-   ul.schedule-list
+    //-     each event in schedule
+    //-       li(class=`schedule-list-item schedule-list-item--${event.type}`)
+    //-         .schedule-list-item-time
+    //-           span.schedule-list-item__time= event.time
+    //-         .schedule-list-item-content
+    //-           h3.schedule-list-item__title= event.title
+    //-           p.schedule-list-item__talk= event.talk
+    //-   p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
 
-    section.tickets
-      .tickets-wrapper
-        h2.tickets-title Ingresso
-        a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
+    //- section.tickets
+    //-   .tickets-wrapper
+    //-     h2.tickets-title Ingresso
+    //-     a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
-    section.support
-      .support-wrapper
-        h2.support-title #[span Patrocínio]
-          ul.support-list.patro
-            each sponsor in sponsors
-              li.support-item
-                a.support-link(href=`${sponsor.website}` target='_blank')
-                  img(src=`assets/img/sponsors/${sponsor.logo}`)
-        h2.support-title #[span Apoio]
-          ul.support-list.apoio
-            each item in support
-              li.support-item
-                a.support-link(href=`${item.website}` target='_blank')
-                  img(src=`assets/img/support/${item.logo}`)
+    //- section.support
+    //-   .support-wrapper
+    //-     h2.support-title #[span Patrocínio]
+    //-       ul.support-list.patro
+    //-         each sponsor in sponsors
+    //-           li.support-item
+    //-             a.support-link(href=`${sponsor.website}` target='_blank')
+    //-               img(src=`assets/img/sponsors/${sponsor.logo}`)
+    //-     h2.support-title #[span Apoio]
+    //-       ul.support-list.apoio
+    //-         each item in support
+    //-           li.support-item
+    //-             a.support-link(href=`${item.website}` target='_blank')
+    //-               img(src=`assets/img/support/${item.logo}`)
 
     footer.footer
       .footer-wrapper
