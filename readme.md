@@ -1,5 +1,5 @@
-# Front in Campinas 2018
-> Site oficial do Front in Campinas 2018
+# Front in Campinas 2019
+> Site oficial do Front in Campinas 2019
 
 ## Como rodar o projeto
 
