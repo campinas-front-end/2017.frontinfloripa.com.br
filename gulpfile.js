@@ -34,7 +34,7 @@ gulp.task('read:data', () => {
 gulp.task('connect', () => {
   connect.server({
     root: './docs',
-    port: 2017,
+    port: 2019,
     livereload: true
   })
 })
