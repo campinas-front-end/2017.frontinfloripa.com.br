@@ -117,20 +117,20 @@ html
     //-     h2.tickets-title Ingresso
     //-     a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
-    //- section.support
-    //-   .support-wrapper
-    //-     h2.support-title #[span Patrocínio]
-    //-       ul.support-list.patro
-    //-         each sponsor in sponsors
-    //-           li.support-item
-    //-             a.support-link(href=`${sponsor.website}` target='_blank')
-    //-               img(src=`assets/img/sponsors/${sponsor.logo}`)
-    //-     h2.support-title #[span Apoio]
-    //-       ul.support-list.apoio
-    //-         each item in support
-    //-           li.support-item
-    //-             a.support-link(href=`${item.website}` target='_blank')
-    //-               img(src=`assets/img/support/${item.logo}`)
+    section.support
+      .support-wrapper
+        //- h2.support-title #[span Patrocínio]
+        //-   ul.support-list.patro
+        //-     each sponsor in sponsors
+        //-       li.support-item
+        //-         a.support-link(href=`${sponsor.website}` target='_blank')
+        //-           img(src=`assets/img/sponsors/${sponsor.logo}`)
+        h2.support-title #[span Apoio]
+          ul.support-list.apoio
+            each item in support
+              li.support-item
+                a.support-link(href=`${item.website}` target='_blank')
+                  img(src=`assets/img/support/${item.logo}`)
 
     footer.footer
       .footer-wrapper
