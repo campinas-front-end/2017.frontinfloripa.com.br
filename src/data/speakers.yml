@@ -5,3 +5,10 @@
   talk: "A dive into Cors - aprofundando nas políticas de Cors e preflight"
   talk_description: '"Origin http://localhost is not allowed by Access-Control-Allow-Origin". Já é uma rotina se deparar com esse erro durante o desenvolvimento de um projeto de front end. E aí para resolver, recorremos ao backend ou algum bypass, ou qualquer outra gambiarra que funcione. Mas será que realmente sabemos o que está por trás disso e a forma ideal de resolver?'
   status: "on"
+-
+  name: "Leandro Diniz"
+  avatar: "leandro.jpg"
+  linkedin: "leandrodiniz"
+  talk: "A importância do desenvolvedor front-end na experência do usuário."
+  talk_description: "Nos projetos mais recentes que participei, percebi uma certa discrepância entre a ideia e o fluxo proposto pelo profissional de UX e o que de fato foi implementado pelo profissional front-end. Conversando com os times responsáveis por esses projetos notei que em boa parte dos casos o desenvolvedor front-end não reconhecia a função dele, de uma certa maneira, como a de um UX também e sim apenas como de uma pessoa que “reproduz as telas”. Xs desenvolvedorxs front-end precisam entender que são peças fundamentais na experiência do usuário, e que essa função não é única e exclusiva do profissional de UX."
+  status: "on"
