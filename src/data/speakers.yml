@@ -12,3 +12,10 @@
   talk: "A importância do desenvolvedor front-end na experência do usuário."
   talk_description: "Nos projetos mais recentes que participei, percebi uma certa discrepância entre a ideia e o fluxo proposto pelo profissional de UX e o que de fato foi implementado pelo profissional front-end. Conversando com os times responsáveis por esses projetos notei que em boa parte dos casos o desenvolvedor front-end não reconhecia a função dele, de uma certa maneira, como a de um UX também e sim apenas como de uma pessoa que “reproduz as telas”. Xs desenvolvedorxs front-end precisam entender que são peças fundamentais na experiência do usuário, e que essa função não é única e exclusiva do profissional de UX."
   status: "on"
+-
+  name: "Paulo Silveira"
+  avatar: "paulo.jpeg"
+  twitter: "paulo_caelum"
+  talk: "Carreiras Hipsters: os novos profissionais de tecnologia"
+  talk_description: "O perfil do profissional de tecnologia que precisamos mudou: em vez de programadores, designers e suporte, falamos agora de front-enders, UXers e Devops. Não é apenas um truque de nomenclatura: está totalmente relacionado a entrega de resultados e a real necessidade de multidisciplinaridade. O que estudar? Como praticar? Qual caminho seguir?"
+  status: "on"
