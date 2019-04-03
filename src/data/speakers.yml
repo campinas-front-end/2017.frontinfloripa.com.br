@@ -19,3 +19,9 @@
   talk: "Carreiras Hipsters: os novos profissionais de tecnologia"
   talk_description: "O perfil do profissional de tecnologia que precisamos mudou: em vez de programadores, designers e suporte, falamos agora de front-enders, UXers e Devops. Não é apenas um truque de nomenclatura: está totalmente relacionado a entrega de resultados e a real necessidade de multidisciplinaridade. O que estudar? Como praticar? Qual caminho seguir?"
   status: "on"
+-
+  name: "Rodrigo Pokemaobr"
+  avatar: "pokemao.jpg"
+  twitter: "pokemaobr"
+  talk: "Standup"
+  status: "on"
