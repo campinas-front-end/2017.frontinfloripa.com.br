@@ -65,11 +65,13 @@ html
           span Palestrantes &amp; Talks
         ul.speakers-list
           each speaker in speakers
-            li(class=`speakers-list-item speakers-list-item__status-${speaker.status}`)
+            li.speakers-list-item.speakers-list-item__status-on(class=speaker.keynote ? "speakers-list-item__keynote" : "")
               .speakers-list-item-photo
                 img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
               .speakers-list-item-content
                 h3.speakers-list-item__title= speaker.name
+                  if speaker.keynote
+                    span.speaker-list-item__title-keynote Keynote
                 span.speakers-list-item__company= speaker.company
                 .speakers-list-item__social
                   if speaker.github
