@@ -42,6 +42,14 @@
   talk_description: "Muitos devs sonham em contar com um design system pra não precisar mais codar os mesmos componentes várias vezes, e ainda entregar uma experiência mais consistente para o usuário. Porém, é surpreendentemente complexo tirar essa idéia do papel. Descubra os percalços e aprendizados que tivemos na Magnetis ao concretizar o Astro, nosso design system."
   status: "on"
 -
+  name: "Livia G. Martins e Michele Frason"
+  avatar: "livia_michele.png"
+  twitter: "liviagabos"
+  twitter_dupla: "mi_frasson"
+  talk: "Como pensar em acessibilidade durante o desenvolvimento de uma interface"
+  talk_description: "Existem algumas sugestões que facilitam o o desenvolvimento de uma interface acessível. Saber como as pessoas com deficiência navegam, saber suas limitações e o que impacta para que elas desistam de um aplicativo ou site. O objetivo da palestra é dar condições para que as pessoas conheçam o próximo e criem empatia por ele."
+  status: "on"
+-
   name: "Leandro Diniz"
   avatar: "leandro.jpg"
   twitter: "leandro_diniz"
