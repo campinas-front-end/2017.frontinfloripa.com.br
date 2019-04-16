@@ -654,26 +654,6 @@ body {
   display: flex;
   overflow: hidden;
 }
-.speakers-list-item__keynote {
-  background-color: #2e4057;
-}
-.speakers-list-item__keynote .speakers-list-item__talk,
-.speakers-list-item__keynote .speakers-list-item__talk-description {
-  color: #fff;
-}
-.speakers-list-item__keynote .speakers-list-item__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-}
-.speaker-list-item__title-keynote {
-  font-weight: bold;
-  color: #fff;
-  background-color: #c61b75;
-  padding: 10px;
-  border-radius: 4px;
-}
 @media only screen and (max-width: 580px) {
   .speakers-list-item {
     display: block;

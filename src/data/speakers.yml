@@ -60,5 +60,6 @@
   name: "Rodrigo Pokemaobr"
   avatar: "pokemao.jpg"
   twitter: "pokemaobr"
-  talk: "Standup"
+  talk: "A Alquimia Front-End"
+  talk_description: "Na alquimia clássica, tínhamos a busca incessante para a cura de todas as doenças e a vida eterna a partir dos mais diversos elementos e campos da ciência. Nesse stand-up iremos ver a busca incessante do front-end em busca da resolução de todos os problemas através dos frameworks filosofais."
   status: "on"
