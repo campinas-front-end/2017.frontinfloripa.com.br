@@ -1,23 +1,15 @@
 -
-  name: "IQ360"
-  website: "https://www.iq360.com.br/?utm_source=frontincampinas"
-  logo: "iq360.png"
--
   name: "Daitan Group"
   website: "http://www.daitangroup.com?utm_source=frontincampinas"
   logo: "daitan.png"
 -
-  name: "MaxMilhas"
-  website: "https://www.maxmilhas.com.br/trabalhe-conosco?utm_source=frontincampinas"
-  logo: "maxmilhas.png"
+  name: "Dextra"
+  website: "https://dextra.com.br/pt?utm_source=frontincampinas"
+  logo: "dextra.png"
 -
-  name: "UPX Technologies"
-  website: "https://www.upx.com?utm_source=frontincampinas"
-  logo: "upx.png"
--
-  name: "e.Mix"
-  website: "https://emix.com.br?utm_source=frontincampinas"
-  logo: "e_mix.png"
+  name: "inGaia"
+  website: "https://ingaia.com.br?utm_source=frontincampinas"
+  logo: "ingaia.png"
 -
   name: "Matera"
   website: "http://matera.com?utm_source=frontincampinas"
@@ -26,3 +18,15 @@
   name: "Magnetis"
   website: "http://magnetis.com.br?utm_source=frontincampinas"
   logo: "magnetis.png"
+-
+  name: "ThoughtWorks"
+  website: "https://www.thoughtworks.com?utm_source=frontincampinas"
+  logo: "tw.png"
+-
+  name: "Toptal"
+  website: "https://www.toptal.com?utm_source=frontincampinas"
+  logo: "toptal.png"
+-
+  name: "UPX Technologies"
+  website: "https://www.upx.com?utm_source=frontincampinas"
+  logo: "upx.png"
