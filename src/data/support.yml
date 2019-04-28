@@ -1,47 +1,43 @@
 -
-  name: "Caelum"
-  website: "https://www.caelum.com.br"
-  logo: "caelum.png"
--
   name: "Alura"
   website: "https://www.alura.com.br"
   logo: "alura.png"
 -
+  name: "BrazilJS"
+  website: "http://braziljs.org/"
+  logo: "braziljs.png"
+-
+  name: "Caelum"
+  website: "https://www.caelum.com.br"
+  logo: "caelum.png"
+-
   name: "Casa do Código"
   website: "https://www.casadocodigo.com.br"
   logo: "casa_do_codigo.png"
-# -
-#   name: "Sympla"
-#   website: "https://www.sympla.com.br"
-#   logo: "sympla.png"
-# -
-#   name: "BrazilJS"
-#   website: "http://braziljs.org/"
-#   logo: "braziljs.png"
-# -
-#   name: "GDG Campinas"
-#   website: "https://gdg-campinas.github.io/"
-#   logo: "gdg-campinas.png"
-# -
-#   name: "Dev Na Estrada"
-#   website: "https://devnaestrada.com.br/"
-#   logo: "dne.svg"
-# -
-#   name: "Imasters"
-#   website: "https://imasters.com.br/"
-#   logo: "imasters.png"
+-
+  name: "Dev Na Estrada"
+  website: "https://devnaestrada.com.br/"
+  logo: "dne.svg"
 -
   name: "Front in Sampa"
   website: "http://www.frontinsampa.com.br/"
   logo: "front-in-sampa.png"
 -
+  name: "Front-End Brasil"
+  website: "https://frontendbr.com.br/"
+  logo: "frontendbrasil.png"
+-
   name: "GeekHunter"
   website: "https://www.geekhunter.com.br/"
   logo: "geekhunter.svg"
 -
-  name: "Front-End Brasil"
-  website: "https://frontendbr.com.br/"
-  logo: "frontendbrasil.png"
+  name: "Kassel Labes"
+  website: "https://kassellabs.io/"
+  logo: "kassel-labs.png"
+-
+  name: "Lovelace Podcast"
+  website: "https://twitter.com/lovelacepodcast?lang=en"
+  logo: "lovelace.png"
 -
   name: "Minas Programam"
   website: "https://minasprogramam.com/"
