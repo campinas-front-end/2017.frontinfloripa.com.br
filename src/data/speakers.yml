@@ -63,3 +63,10 @@
   talk: "A Alquimia Front-End"
   talk_description: "Na alquimia clássica, tínhamos a busca incessante para a cura de todas as doenças e a vida eterna a partir dos mais diversos elementos e campos da ciência. Nesse stand-up iremos ver a busca incessante do front-end em busca da resolução de todos os problemas através dos frameworks filosofais."
   status: "on"
+-
+  name: "Stefano Diem Benatti"
+  avatar: "stefano.jpg"
+  twitter: "teonimesic"
+  talk: "Trabalho Remoto Sustentável"
+  talk_description: "Você tem vontade ou se interessa por trabalho remoto? Nessa Talk irei compartilhar as possibildades, dificuldades e melhores práticas que adquiri no decorrer de 12 anos trabalhando remotamente em diversas configurações. Alguns pontos a serem explorados são local de trabalho, rotina, comunicação, networking, entre outros."
+  status: "on"
