@@ -7,31 +7,31 @@
   type: other
   title: "Abertura do Evento"
 -
-  time: 9h20
+  time: 9h25
   type: talk
-  title: "Larissa Abreu"
-  talk: "A magia dos componentes nativos independente de frameworks"
+  title: "Paulo Silveira"
+  talk: "Carreiras Hipsters: os novos profissionais de tecnologia"
 -
-  time: 10h
+  time: 10h05
   type: talk
-  title: "Lucas Germano e Leonardo Almeida"
-  talk: "Não existe nada de novo sob o Sol!"
+  title: "Ana Coimbra"
+  talk: "A dive into Cors - aprofundando nas políticas de Cors e preflight"
 -
-  time: 10h35
+  time: 10h45
   type: other
   title: "Coffee Break"
 -
-  time: 11h10
+  time: 11h25
   type: talk
-  title: "Simone Amorim"
-  talk: "Montando layouts em um mini game chamado Browser"
+  title: "Hugo Bessa"
+  talk: "3 hábitos para escrever CSS escalável"
 -
-  time: 11h45
+  time: 12h05
   type: talk
-  title: "Paulo Silveira"
-  talk: "Recompose na prática"
+  title: "Aléxia Balionis"
+  talk: "1, 2, 3, Testando"
 -
-  time: 12h30
+  time: 12h35
   type: other
   title: "Almoço"
 -
@@ -41,28 +41,38 @@
 -
   time: 14h30
   type: talk
-  title: "Bernard De Luna"
-  talk: "Vivendo como um porco-espinho"
+  title: "Stefano Diem Benatti"
+  talk: "Trabalho Remoto Sustentável"
 -
-  time: 15h05
+  time: 14h50
   type: talk
-  title: "Maria Clara"
-  talk: "Construindo uma web melhor: Ferramentas e testes de acessibilidade"
+  title: "Carla Vieira"
+  talk: "O que nunca te disseram sobre síndrome do impostor e ansiedade"
+-
+  time: 15h25
+  type: talk
+  title: "Pokemaobr"
+  talk: "A Alquimia Front-End"
 -
   time: 16h
+  type: talk
+  title: "Lari Maza"
+  talk: "Nasce um Astro: Como implementamos um design system"
+-
+  time: 16h35
   type: other
   title: "Coffee Break"
 -
-  time: 16h35
+  time: 17h10
   type: talk
-  title: "Eduardo Cuducos"
-  talk: "Tecnologia cívica: o que importa são as perguntas"
+  title: "Leandro Diniz"
+  talk: "A importância do desenvolvedor front-end na experência do usuário"
 -
-  time: 17h20
+  time: 17h45
   type: talk
-  title: "Alda Rocha"
-  talk: "Como ter uma comunidade mais inclusiva"
+  title: "Livia G. Martins e Michele Frason"
+  talk: "Como pensar em acessibilidade durante o desenvolvimento de uma interface"
 -
-  time: 18h
+  time: 18h15
   type: other
   title: "Encerramento"
