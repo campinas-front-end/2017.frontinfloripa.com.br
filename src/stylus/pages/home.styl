@@ -2,6 +2,7 @@
   height 100%
   position relative
   overflow hidden
+  background: #000000
   border-top 5px solid $color-primary
   // bg('img', 'bg-header.jpg')
 
@@ -14,30 +15,30 @@
     height 100vh
     // background url($path-img + 'dots.png') rgba($color-default, .8)
 
-    &:before,
-    &:after
-      content ''
-      position absolute
-      width 100%
-      height 400px
+    // &:before,
+    // &:after
+    //   content ''
+    //   position absolute
+    //   width 100%
+    //   height 400px
 
-    &:before
-      background $color-primary-alt
-      right 50%
-      transform rotate(10deg)
-      bottom -200px
+    // &:before
+    //   background $color-primary-alt
+    //   right 50%
+    //   transform rotate(10deg)
+    //   bottom -200px
 
-      +below('phone')
-        bottom @bottom - 100
+    //   +below('phone')
+    //     bottom @bottom - 100
 
-    &:after
-      background $color-primary
-      left 51%
-      transform rotate(-10deg)
-      bottom -195px
+    // &:after
+    //   background $color-primary
+    //   left 51%
+    //   transform rotate(-10deg)
+    //   bottom -195px
 
-      +below('phone')
-        bottom @bottom - 95
+    //   +below('phone')
+    //     bottom @bottom - 95
 
   &-content
     width 100%

@@ -33,7 +33,7 @@ html
       .header-wrapper
         .header-content
           h1.header-logo #{config.event.name}
-          h2.header-info 04/Maio/2019 #[span &bull;] 8h #[span &bull;] #[a(href='https://goo.gl/maps/67rKXjWTvqM2' target='_blank') Hotel Vitória Concept]
+          h2.header-info 06/Junho/2020 #[span &bull;] 8h #[span &bull;] #[a(href='https://goo.gl/maps/67rKXjWTvqM2' target='_blank') Hotel Vitória Concept]
           a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
           div.header-support
@@ -70,6 +70,7 @@ html
                 img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
               .speakers-list-item-content
                 h3.speakers-list-item__title= speaker.name
+                .speakers-list-item__corporation= speaker.corporation
                   if speaker.keynote
                     span.speaker-list-item__title-keynote  Keynote
                 span.speakers-list-item__company= speaker.company

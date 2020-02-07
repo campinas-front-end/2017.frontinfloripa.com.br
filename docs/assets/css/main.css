@@ -223,7 +223,7 @@ body {
   font-size: 1rem;
   font-family: 'Work Sans', sans-serif;
   font-variant-ligatures: none;
-  background: #2e4057;
+  background: #fff;
 }
 .button {
   display: inline-block;
@@ -261,6 +261,7 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
+  background: #000;
   border-top: 5px solid #c61b75;
 }
 .header-wrapper {
@@ -278,39 +279,6 @@ body {
   align-items: center;
   z-index: 10;
   height: 100vh;
-}
-.header-wrapper:before,
-.header-wrapper:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 400px;
-}
-.header-wrapper:before {
-  background: #b21869;
-  right: 50%;
-  -webkit-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  transform: rotate(10deg);
-  bottom: -200px;
-}
-@media only screen and (max-width: 580px) {
-  .header-wrapper:before {
-    bottom: -300px;
-  }
-}
-.header-wrapper:after {
-  background: #c61b75;
-  left: 51%;
-  -webkit-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  transform: rotate(-10deg);
-  bottom: -195px;
-}
-@media only screen and (max-width: 580px) {
-  .header-wrapper:after {
-    bottom: -290px;
-  }
 }
 .header-content {
   width: 100%;
@@ -536,7 +504,7 @@ body {
   line-height: 1;
   margin: 0;
   font-weight: bold;
-  color: #9cb1cb;
+  color: #fff;
 }
 @media only screen and (max-width: 580px) {
   .features-list-item:before {
@@ -581,9 +549,9 @@ body {
   background-color: #ececec;
 }
 .speakers-wrapper {
-  max-width: 1040px;
+  max-width: 100%;
+  margin: 0 40px;
   padding: 0 2em;
-  margin: 0 auto;
 }
 .speakers-title {
   text-align: center;
@@ -621,38 +589,23 @@ body {
   margin: 0;
   list-style: none;
   margin-top: 10em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+  display: grid;
+  grid-template: 1fr 1fr / repeat(3, 1fr);
+  gap: 20px;
 }
 .speakers-list__presenter {
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
   justify-content: center;
   margin-top: 9em;
+  grid-template: 1fr / 1fr;
 }
 .speakers-list-item {
   position: relative;
-  margin-bottom: 4em;
   background-color: #fff;
   width: 100%;
-  padding: 1.6em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 16px 40px;
+  display: block;
   overflow: hidden;
+  margin: 0 auto 4em;
 }
 @media only screen and (max-width: 580px) {
   .speakers-list-item {
@@ -704,7 +657,7 @@ body {
   }
 }
 .speakers-list-item__presenter .speakers-list-item__company {
-  color: #fff;
+  color: #000;
   margin-top: 0;
   font-size: 2em;
 }
@@ -746,6 +699,9 @@ body {
 }
 .speakers-list-item__avatar {
   max-width: 100%;
+  height: 340px;
+  margin: 0 auto;
+  display: flex;
 }
 .speakers-list-item__title {
   font-size: 2.8em;
@@ -808,7 +764,7 @@ body {
   line-height: 1.1;
 }
 .speakers-list-item__talk-description {
-  color: #2e4057;
+  color: #000000;
   font-size: 1.6em;
   margin: 0.8em 0;
   line-height: 1.6;
