@@ -34,7 +34,7 @@ html
         .header-content
           h1.header-logo #{config.event.name}
           h2.header-info 06/Junho/2020 #[span &bull;] 8h #[span &bull;] #[a(href='https://goo.gl/maps/67rKXjWTvqM2' target='_blank') Hotel Vitória Concept]
-          a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
+          //- a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
           div.header-support
             a.header-support__link(href=`${config.papers.url}` target='_blank') Quero palestrar
@@ -59,39 +59,39 @@ html
               h3.features-list-item__title Para quem?
               h3.features-list-item__description Todas as pessoas em todas as áreas de desenvolvimento podem participar do evento. Além do networking, elas poderão aprender e conversar sobre carreira e softskils necessários para toda a área de tecnologia.
 
-    section.speakers
-      .speakers-wrapper
-        .speakers-title
-          span Palestrantes &amp; Talks
-        ul.speakers-list
-          each speaker in speakers
-            li.speakers-list-item.speakers-list-item__status-on(class=speaker.keynote ? "speakers-list-item__keynote" : "")
-              .speakers-list-item-photo
-                img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
-              .speakers-list-item-content
-                h3.speakers-list-item__title= speaker.name
-                .speakers-list-item__corporation= speaker.corporation
-                  if speaker.keynote
-                    span.speaker-list-item__title-keynote  Keynote
-                span.speakers-list-item__company= speaker.company
-                .speakers-list-item__social
-                  if speaker.github
-                    a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
-                  if speaker.twitter
-                    a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
-                  if speaker.twitter_dupla
-                    a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter_dupla}` target='_blank') Twitter
-                p.speakers-list-item__talk= speaker.talk
-                p.speakers-list-item__talk-description= speaker.talk_description
-        .speakers-title.speakers-title__presenter
-          span Apresentação
-        ul.speakers-list.speakers-list__presenter
-          li.speakers-list-item.speakers-list-item__presenter
-            .speakers-list-item-photo__presenter
-              img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
-            .speakers-list-item-content
-              h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
-              a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
+    //- section.speakers
+    //-   .speakers-wrapper
+    //-     .speakers-title
+    //-       span Palestrantes &amp; Talks
+    //-     ul.speakers-list
+    //-       each speaker in speakers
+    //-         li.speakers-list-item.speakers-list-item__status-on(class=speaker.keynote ? "speakers-list-item__keynote" : "")
+    //-           .speakers-list-item-photo
+    //-             img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
+    //-           .speakers-list-item-content
+    //-             h3.speakers-list-item__title= speaker.name
+    //-             .speakers-list-item__corporation= speaker.corporation
+    //-               if speaker.keynote
+    //-                 span.speaker-list-item__title-keynote  Keynote
+    //-             span.speakers-list-item__company= speaker.company
+    //-             .speakers-list-item__social
+    //-               if speaker.github
+    //-                 a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
+    //-               if speaker.twitter
+    //-                 a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
+    //-               if speaker.twitter_dupla
+    //-                 a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter_dupla}` target='_blank') Twitter
+    //-             p.speakers-list-item__talk= speaker.talk
+    //-             p.speakers-list-item__talk-description= speaker.talk_description
+    //-     .speakers-title.speakers-title__presenter
+    //-       span Apresentação
+    //-     ul.speakers-list.speakers-list__presenter
+    //-       li.speakers-list-item.speakers-list-item__presenter
+    //-         .speakers-list-item-photo__presenter
+    //-           img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
+    //-         .speakers-list-item-content
+    //-           h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
+    //-           a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
 
     section.location
       .location-wrapper
@@ -104,38 +104,38 @@ html
 
         .location-column.photo
 
-    section.schedule
-      .speakers-title
-        span Programação
-      ul.schedule-list
-        each event in schedule
-          li(class=`schedule-list-item schedule-list-item--${event.type}`)
-            .schedule-list-item-time
-              span.schedule-list-item__time= event.time
-            .schedule-list-item-content
-              h3.schedule-list-item__title= event.title
-              p.schedule-list-item__talk= event.talk
-      p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
+    //- section.schedule
+    //-   .speakers-title
+    //-     span Programação
+    //-   ul.schedule-list
+    //-     each event in schedule
+    //-       li(class=`schedule-list-item schedule-list-item--${event.type}`)
+    //-         .schedule-list-item-time
+    //-           span.schedule-list-item__time= event.time
+    //-         .schedule-list-item-content
+    //-           h3.schedule-list-item__title= event.title
+    //-           p.schedule-list-item__talk= event.talk
+    //-   p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
 
-    section.tickets
-      .tickets-wrapper
-        h2.tickets-title Ingresso
-        a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
+    //- section.tickets
+    //-   .tickets-wrapper
+    //-     h2.tickets-title Ingresso
+    //-     a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
-    section.support
-      .support-wrapper
-        h2.support-title #[span Patrocínio]
-          ul.support-list.patro
-            each sponsor in sponsors
-              li.support-item
-                a.support-link(href=`${sponsor.website}` target='_blank')
-                  img(src=`assets/img/sponsors/${sponsor.logo}`)
-        h2.support-title #[span Apoio]
-          ul.support-list.apoio
-            each item in support
-              li.support-item
-                a.support-link(href=`${item.website}` target='_blank')
-                  img(src=`assets/img/support/${item.logo}`)
+    //- section.support
+    //-   .support-wrapper
+    //-     h2.support-title #[span Patrocínio]
+    //-       ul.support-list.patro
+    //-         each sponsor in sponsors
+    //-           li.support-item
+    //-             a.support-link(href=`${sponsor.website}` target='_blank')
+    //-               img(src=`assets/img/sponsors/${sponsor.logo}`)
+    //-     h2.support-title #[span Apoio]
+    //-       ul.support-list.apoio
+    //-         each item in support
+    //-           li.support-item
+    //-             a.support-link(href=`${item.website}` target='_blank')
+    //-               img(src=`assets/img/support/${item.logo}`)
 
     footer.footer
       .footer-wrapper
