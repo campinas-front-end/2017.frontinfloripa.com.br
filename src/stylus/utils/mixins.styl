@@ -11,8 +11,7 @@ logo-ratio($new-width)
 
 wrapper()
   max-width $wrapper-size
-  padding 0 2em
-  margin 0 auto
+  position relative
 
 text-rotate()
   transform skew(-4deg) rotate(-4deg)
@@ -36,3 +35,9 @@ text-gradient()
   background-size cover
   text-fill-color transparent
   -webkit-text-fill-color transparent
+
+wrapper-texts()
+  align-items center
+  justify-content left
+  display flex
+  padding-left 10%

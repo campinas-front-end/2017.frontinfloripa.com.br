@@ -140,22 +140,28 @@
 
 .features
   position relative
-  padding 15em 0
-  background #fff
+  padding 0 15em
+  background $color-primary
+  height 100vh
   overflow hidden
+  display flex
+  align-items center
+  justify-content left
 
   +below('phone')
     padding-top 8em
 
   &:before
     content ''
-    width 100px
-    height 400px
-    border-right 1px solid $color-primary
-    transform rotate(-45deg)
+    width 300px
+    height 100%
     position absolute
-    top -100px
-    left -100px
+    top -30px
+    position absolute
+    right 30px
+    background-image url($path-svg + 'astronaut.svg')
+    background-repeat no-repeat
+    background-position bottom
 
     +below('phone')
       display none
@@ -184,7 +190,6 @@
       display block
 
   &-column-title
-    flex-basis 30%
 
     +below('phone')
       margin-bottom 8em
@@ -194,7 +199,25 @@
         display none
 
   &-column-content
-    flex 1
+    background-color #000
+    padding 0 15em
+    height 100vh
+    position relative
+    align-items center
+    justify-content left
+    display flex
+
+    &:before
+      content ''
+      width 300px
+      height 100%
+      position absolute
+      top -30px
+      position absolute
+      right 30px
+      background-image url($path-svg + 'astronaut.svg')
+      background-repeat no-repeat
+      background-position bottom
 
   &-title
     color $color-text
@@ -216,26 +239,15 @@
     list-reset()
     padding-top 1em
     counter-reset section
+    wrapper()
+    display block
 
     &-item
-      padding-left 25em
       position relative
       margin-bottom 6em
 
       +below('phone')
         padding-left 0
-
-      &:before
-        counter-increment section
-        content counter(section)
-        font-size 13em
-        position absolute
-        left 1em
-        top -10px
-        line-height 1
-        margin 0
-        font-weight bold
-        color lighten($color-default, 60%)
 
         +below('phone')
           display none
@@ -244,7 +256,7 @@
         font-size 4.5em
         font-weight 600
         margin 0
-        background-image linear-gradient(-45deg, $color-primary - 10%, $color-primary-alt)
+        background-image linear-gradient(-45deg, $color-default - 10%, $color-primary-alt)
         text-gradient()
 
         +below('phone')
@@ -256,6 +268,53 @@
         font-size 1.5em
         line-height 1.6
         color $color-text
+
+.past-events-column-content
+  position relative
+  background $color-primary
+  height 100vh
+  display grid
+  justify-content center
+  align-self center
+  align-content center
+
+
+  &__title
+    color $color-text
+    font-weight bold
+    font-size 7em
+    margin 0
+    max-width 540px
+    padding 0 0 40px
+
+  &__flickr
+    cem = 100%
+    max-width "calc(%s + 40px)" % cem
+    display inline-flex
+    margin 0 auto
+    & > div
+      display block
+
+  &__youtube
+    display block
+    color white
+    text-decoration unset
+    font-size 20px
+    font-weight bold
+    padding 40px 0
+    text-align center
+
+  &:before
+    content ''
+    width 300px
+    height 100%
+    position absolute
+    top -30px
+    position absolute
+    right 0
+    background-image url($path-svg + 'heart.svg')
+    background-repeat no-repeat
+    background-size contain
 
 .speakers
   position relative
@@ -542,7 +601,7 @@
 
       .button
         font-size 1.6em
-        background #fff
+        background #000
         margin-top 1em
         color $color-text
         font-weight 600
@@ -806,8 +865,7 @@
       display block
 
   &-column
-    flex 1
-    margin 2em 0
+    wrapper()
 
     &.coc
       +below('phone')
