@@ -245,6 +245,8 @@
     &-item
       position relative
       margin-bottom 6em
+      &:last-child 
+        margin-bottom: 0
 
       +below('phone')
         padding-left 0
@@ -253,11 +255,11 @@
           display none
 
       &__title
-        font-size 4.5em
+        font-size 5.5em
         font-weight 600
         margin 0
         background-image linear-gradient(-45deg, $color-default - 10%, $color-primary-alt)
-        text-gradient()
+        color $color-default
 
         +below('phone')
           font-size 3.8em
@@ -265,7 +267,7 @@
 
       &__description
         font-weight normal
-        font-size 1.5em
+        font-size 2.2em
         line-height 1.6
         color $color-text
 
@@ -854,12 +856,15 @@
       max-width 300px
 
 .footer
-  padding 5em 0
-  background-color #ececec
+  padding 4em 0
+  background-color #000
 
   &-wrapper
     wrapper()
-    display flex
+    display grid
+    justify-content center
+    align-items center
+    grid-template-columns repeat(3, 1fr)
 
     +below('phone')
       display block
