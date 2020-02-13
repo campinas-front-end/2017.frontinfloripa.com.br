@@ -419,23 +419,6 @@ body {
     padding-top: 8em;
   }
 }
-.features:before {
-  content: '';
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: -30px;
-  position: absolute;
-  right: 30px;
-  background-image: url("../svg/astronaut.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-@media only screen and (max-width: 580px) {
-  .features:before {
-    display: none;
-  }
-}
 .features-wrapper {
   max-width: 60%;
   position: relative;
@@ -477,18 +460,6 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-.features-column-content:before {
-  content: '';
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: -30px;
-  position: absolute;
-  right: 30px;
-  background-image: url("../svg/astronaut.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 .features-title {
   color: #fff;
@@ -594,18 +565,6 @@ body {
   font-weight: bold;
   padding: 40px 0;
   text-align: center;
-}
-.past-events-column-content:before {
-  content: '';
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: -30px;
-  position: absolute;
-  right: 0;
-  background-image: url("../svg/heart.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .speakers {
   position: relative;
