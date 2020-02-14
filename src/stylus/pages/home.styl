@@ -148,6 +148,9 @@
   align-items center
   justify-content left
 
+  +below('desktop-large')
+    padding 0 2.0em
+
   +below('phone')
     padding-top 8em
 
@@ -186,6 +189,9 @@
     z-index 20
     position relative
 
+    +below('desktop-large')
+      max-width 100%
+
     +below('phone')
       display block
 
@@ -207,6 +213,9 @@
     justify-content left
     display flex
 
+    +below('desktop-large')
+       padding 0 2.0em
+
   // &:before
   //  content ''
   //  width 300px
@@ -225,21 +234,27 @@
     font-size 7em
     margin 0
 
+    +below('desktop-large')
+      font-size 6.0em
+
     +below('phone')
-      font-size 5em
+      font-size 4.0em
 
   &-description
     color $color-text
     font-weight normal
-    font-size 2.2em
+    font-size 2.4em
     margin 2em 0
     line-height 1.6
+
+    +below('desktop-small')
+      font-size 2.0em
 
   &-list
     list-reset()
     padding-top 1em
     counter-reset section
-    wrapper()
+    width 100%
     display block
 
     &-item
@@ -251,14 +266,14 @@
       +below('phone')
         padding-left 0
 
-        +below('phone')
-          display none
-
       &__title
         font-size 5.5em
         font-weight 600
         margin 0
         color $color-primary
+
+        +below('desktop-small')
+          font-size 3.5em
 
         +below('phone')
           font-size 3.8em
@@ -266,19 +281,66 @@
 
       &__description
         font-weight normal
-        font-size 2.2em
+        font-size 2.4em
         line-height 1.6
         color $color-text
+
+        +below('desktop-small')
+          font-size 1.8em
 
 .past-events-column-content
   position relative
   background $color-primary
   height 100vh
+  text-align center
   display grid
   justify-content center
   align-self center
   align-content center
 
+  &__container
+    display grid
+    justify-content center
+    align-self center
+    align-content center
+    grid-template-columns 1fr 1fr 1fr
+    grid-template-rows 1fr 1fr 1fr
+    grid-template-areas "images videos images2"
+
+
+  &__grid
+    grid-area images
+
+    &-m2
+      display grid
+      grid-template-columns 1fr 1fr
+      grid-template-rows 1fr 1fr
+
+    &-image
+      width 100%
+
+    &-videos
+      width 100%
+
+  &__grid2
+    grid-area videos
+
+    &-videos
+      width 100%
+
+  &__grid3
+    grid-area images2
+
+    &-m2
+      display grid
+      grid-template-columns 1fr 1fr
+      grid-template-rows 1fr 1fr
+
+        &-image
+          width 100%
+
+        &-videos
+          width 100%
 
   &__title
     color $color-text
@@ -288,13 +350,19 @@
     max-width 540px
     padding 0 0 40px
 
-  &__flickr
+  &__image-container
     cem = 100%
     max-width "calc(%s + 40px)" % cem
     display inline-flex
     margin 0 auto
-    & > div
-      display block
+
+    &:not():last-child
+      background-color red
+      max-width 50px
+
+  &__images
+    display block
+    max-width 100%;
 
   &__youtube
     display block
@@ -503,7 +571,7 @@
   &-wrapper
     display flex
 
-    +below('phone')
+    +below('tablet')
       display block
 
   &-column
@@ -520,7 +588,7 @@
       background-size cover
       overflow hidden
 
-      +below('phone')
+      +below('tablet')
         display none
 
       &:before
@@ -536,7 +604,7 @@
         +below('desktop-small')
           height 1300px
 
-        +below('phone')
+        +below('tablet')
           display none
 
   &-content
@@ -544,7 +612,7 @@
     padding-bottom 7em
     width 80%
 
-    +below('phone')
+    +below('tablet')
       width 100%
       padding-right 2em
       padding-left @padding-right
@@ -866,6 +934,9 @@
     align-items center
     grid-template-columns repeat(3, 1fr)
     margin 0 auto
+    +below('tablet')
+      max-width 100%
+      padding 0 2.0em
 
     +below('phone')
       display block
