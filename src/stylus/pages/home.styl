@@ -283,59 +283,80 @@
         +below('desktop-small')
           font-size 1.8em
 
-.past-events-column-content
-  position relative
-  background $color-primary
-  height 100vh
-  text-align center
-  display grid
-  justify-content center
-  align-self center
-  align-content center
+.past-events
+  &-container
+    position relative
+    text-align center
+    color white
+    font-size 18px
 
-  &__container
+    >:first-child
+      grid-template-areas "video1 video1 video2 video2 imagem1 imagem2"\
+      "video1 video1 video2 video2 imagem3 imagem4"
+
+    >:last-child
+      background-color red
+      grid-template-areas "video1 video1 video2 video2 imagem1 imagem2"\
+      "video1 video1 video2 video2 imagem3 imagem4"
+
+
+  &-column-content
     display grid
-    justify-content center
-    align-self center
-    align-content center
-    grid-template-columns 1fr 1fr 1fr
-    grid-template-rows 1fr 1fr 1fr
-    grid-template-areas "images videos images2"
+    margin 0 auto
+    grid-template-columns 1fr 1fr 1fr 1fr 1fr
+    grid-template-rows 1fr 1fr
 
+  &__video1
+    background-color blue
+    grid-area video1
 
-  &__grid
-    grid-area images
+  &__video2
+    background-color pink
+    grid-area video2
 
-    &-m2
-      display grid
-      grid-template-columns 1fr 1fr
-      grid-template-rows 1fr 1fr
+  &__imagem1, &__imagem2, &__imagem3, &__imagem4
+    background-color green
+    height 100%
 
-    &-image
-      width 100%
+    img
+      width 300px
+      height 100%
 
-    &-videos
-      width 100%
+  &__imagem1
+    grid-area imagem1
 
-  &__grid2
-    grid-area videos
+  &__imagem2
+    grid-area imagem2
 
-    &-videos
-      width 100%
+  &__imagem3
+    grid-area imagem3
 
-  &__grid3
-    grid-area images2
+  &__imagem4
+    grid-area imagem4
 
-    &-m2
-      display grid
-      grid-template-columns 1fr 1fr
-      grid-template-rows 1fr 1fr
+  &__imagem5, &__imagem6, &__imagem7, &__imagem8
+    background-color gray
 
-        &-image
-          width 100%
+  &__imagem5
+    grid-area imagem5
 
-        &-videos
-          width 100%
+  &__imagem6
+    grid-area imagem6
+
+  &__imagem7
+    grid-area imagem7
+
+  &__imagem8
+    grid-area imagem8
+
+  &__video3
+    background-color purple
+    grid-area video3
+
+  &__video4
+    background-color black
+    grid-area video4
+
 
   &__title
     color $color-text
@@ -344,16 +365,6 @@
     margin 0
     max-width 540px
     padding 0 0 40px
-
-  &__image-container
-    cem = 100%
-    max-width "calc(%s + 40px)" % cem
-    display inline-flex
-    margin 0 auto
-
-    &:not():last-child
-      background-color red
-      max-width 50px
 
   &__images
     display block
