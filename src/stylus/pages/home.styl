@@ -146,47 +146,48 @@
   display flex
   align-items center
   justify-content left
+  height 100vh
 
   +below('desktop-large')
     padding 2em 2.0em
 
-  // &:before
-  //  content ''
-  //  width 300px
-  //  height 100%
-  //  position absolute
-  //  top -30px
-  //  position absolute
-  //  right 30px
-  //  background-image url($path-svg + 'astronaut.svg')
-  //  background-repeat no-repeat
-  //  background-position bottom
+  &:before
+    content ''
+    width 300px
+    height 100%
+    position absolute
+    top -80px
+    right 30px
+    background-image url($path-svg + 'astronaut.svg')
+    background-repeat no-repeat
+    background-position bottom
+    animation: ballon-1-animation 6s infinite
+    animation-timing-function: ease-in-out
 
-  //  +below('phone')
-  //  display none
+    @keyframes ballon-1-animation
+      0%
+        transform: translate(0, 30px)
 
-  // &:after
-  //   content ''
-  //   width 100%
-  //   // height 350px
-  //   position absolute
-  //   bottom 0
-  //   left 0
-  //   // bg('img', 'florianopolis-skyline.png')
-  //   background-position left bottom
-  //   z-index 1
+      50%
+        transform: translate(0, 0)
 
-  //   +below('phone')
-  //     background-size 300%
+      100%
+        transform: translate(0, 30px)
+
+
+    +between('tablet', 'desktop-small')
+      width 190px
+
+    +below('phone')
+      display none
 
   &-wrapper
-    wrapper()
     display flex
     z-index 20
     position relative
 
-    +below('desktop-large')
-      max-width 100%
+    +above('tablet')
+      wrapper()
 
     +below('phone')
       display block
@@ -249,17 +250,41 @@
     list-reset()
     padding-top 1em
     counter-reset section
-    width 100%
-    display block
+    display grid
+    align-items center
+    justify-content center
+    height 100vh
+
+    +above('tablet')
+      max-width 60%
+
+    &:before
+      content ''
+      width 300px
+      height 100%
+      position absolute
+      top -30px
+      position absolute
+      right 30px
+      background-image url($path-svg + 'astronaut.svg')
+      background-repeat no-repeat
+      background-position bottom
+
+      +between('tablet', 'desktop-small')
+        width 190px
+
+      +below('phone')
+        display none
 
     &-item
       position relative
-      margin-bottom 6em
+      margin-bottom 2em
       &:last-child
         margin-bottom: 0
 
       +below('phone')
         padding-left 0
+        margin-bottom 2em
 
       &__title
         font-size 5.5em
@@ -271,7 +296,7 @@
           font-size 3.5em
 
         +below('phone')
-          font-size 3.8em
+          font-size 2.8em
           letter-spacing -.03em
 
       &__description
@@ -285,42 +310,53 @@
 
 .past-events
   &-container
-    position relative
-    text-align center
-    color white
-    font-size 18px
 
     >:first-child
-      grid-template-areas "video1 video1 video2 video2 imagem1 imagem2"\
-      "video1 video1 video2 video2 imagem3 imagem4"
+      grid-template-areas "imagem video1 imagem2 imagem2 imagem3 video3"\
+      "video2 imagem1 imagem2 imagem2 imagem4 imagem5"
+      +below('desktop-small')
+        grid-template-areas "imagem imagem1"\
+        imagem2 imagem4"\
+        imagem3 video3"
 
     >:last-child
-      background-color red
-      grid-template-areas "video1 video1 video2 video2 imagem1 imagem2"\
-      "video1 video1 video2 video2 imagem3 imagem4"
-
+      grid-template-areas "imagem imagem video1 imagem1 video3 imagem4"\
+      "imagem imagem imagem2 video2 imagem3 video4"
+      +below('desktop-small')
+        grid-template-areas "imagem imagem1"\
+        imagem2 imagem4"\
+        imagem3 video3"
 
   &-column-content
     display grid
     margin 0 auto
-    grid-template-columns 1fr 1fr 1fr 1fr 1fr
+    grid-template-columns 1fr 1fr 1fr 1fr 1fr 1fr
     grid-template-rows 1fr 1fr
+    overflow hidden
+
+    +below('desktop-small')
+      grid-template-columns: 1fr 1fr 1fr 1fr
 
   &__video1
-    background-color blue
     grid-area video1
 
   &__video2
-    background-color pink
     grid-area video2
 
-  &__imagem1, &__imagem2, &__imagem3, &__imagem4
-    background-color green
+  &__imagem, &__imagem1, &__imagem2, &__imagem3, &__imagem4, &__imagem5
     height 100%
+    transition: all ease .2s
+
+    &:hover
+      transform scale(1.05)
+      transition: all ease .2s
 
     img
-      width 300px
+      width 100%
       height 100%
+
+  &__imagem
+    grid-area imagem
 
   &__imagem1
     grid-area imagem1
@@ -334,27 +370,14 @@
   &__imagem4
     grid-area imagem4
 
-  &__imagem5, &__imagem6, &__imagem7, &__imagem8
-    background-color gray
-
   &__imagem5
     grid-area imagem5
-
-  &__imagem6
-    grid-area imagem6
-
-  &__imagem7
-    grid-area imagem7
-
-  &__imagem8
-    grid-area imagem8
 
   &__video3
     background-color purple
     grid-area video3
 
   &__video4
-    background-color black
     grid-area video4
 
 
@@ -365,10 +388,6 @@
     margin 0
     max-width 540px
     padding 0 0 40px
-
-  &__images
-    display block
-    max-width 100%;
 
   &__youtube
     display block
