@@ -396,6 +396,9 @@ body {
     background-size: 140px;
   }
 }
+.sympla>div {
+  margin: 40px auto;
+}
 .features {
   position: relative;
   padding: 2em 15em;
@@ -421,18 +424,13 @@ body {
 }
 .features:before {
   content: '';
-  width: 300px;
+  width: 430px;
   height: 100%;
   position: absolute;
-  top: -80px;
-  right: 30px;
-  background-image: url("../svg/astronaut.svg");
+  right: 160px;
+  background-image: url("../img/group.png");
   background-repeat: no-repeat;
-  background-position: bottom;
-  -webkit-animation: ballon-1-animation 6s infinite;
-  animation: ballon-1-animation 6s infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  background-position: center;
 }
 @media only screen and (min-width: 580px) and (max-width: 1000px) {
   .features:before {
@@ -442,74 +440,6 @@ body {
 @media only screen and (max-width: 580px) {
   .features:before {
     display: none;
-  }
-}
-@-moz-keyframes ballon-1-animation {
-  0% {
-    -webkit-transform: translate(0, 30px);
-    -ms-transform: translate(0, 30px);
-    transform: translate(0, 30px);
-  }
-  50% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 30px);
-    -ms-transform: translate(0, 30px);
-    transform: translate(0, 30px);
-  }
-}
-@-webkit-keyframes ballon-1-animation {
-  0% {
-    -webkit-transform: translate(0, 30px);
-    -ms-transform: translate(0, 30px);
-    transform: translate(0, 30px);
-  }
-  50% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 30px);
-    -ms-transform: translate(0, 30px);
-    transform: translate(0, 30px);
-  }
-}
-@-o-keyframes ballon-1-animation {
-  0% {
-    -webkit-transform: translate(0, 30px);
-    -ms-transform: translate(0, 30px);
-    transform: translate(0, 30px);
-  }
-  50% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 30px);
-    -ms-transform: translate(0, 30px);
-    transform: translate(0, 30px);
-  }
-}
-@keyframes ballon-1-animation {
-  0% {
-    -webkit-transform: translate(0, 30px);
-    -ms-transform: translate(0, 30px);
-    transform: translate(0, 30px);
-  }
-  50% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 30px);
-    -ms-transform: translate(0, 30px);
-    transform: translate(0, 30px);
   }
 }
 .features-wrapper {
@@ -613,15 +543,19 @@ body {
 }
 .features-list:before {
   content: '';
-  width: 300px;
+  width: 600px;
   height: 100%;
   position: absolute;
   top: -30px;
   position: absolute;
   right: 30px;
-  background-image: url("../svg/astronaut.svg");
+  background-image: url("../svg/balloons.svg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
+  -webkit-animation: ballon-1-animation 6s infinite;
+  animation: ballon-1-animation 6s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 @media only screen and (min-width: 580px) and (max-width: 1000px) {
   .features-list:before {
@@ -631,6 +565,74 @@ body {
 @media only screen and (max-width: 580px) {
   .features-list:before {
     display: none;
+  }
+}
+@-moz-keyframes ballon-1-animation {
+  0% {
+    -webkit-transform: translate(0, -34px);
+    -ms-transform: translate(0, -34px);
+    transform: translate(0, -34px);
+  }
+  50% {
+    -webkit-transform: translate(0, -7px);
+    -ms-transform: translate(0, -7px);
+    transform: translate(0, -7px);
+  }
+  100% {
+    -webkit-transform: translate(0, -34px);
+    -ms-transform: translate(0, -34px);
+    transform: translate(0, -34px);
+  }
+}
+@-webkit-keyframes ballon-1-animation {
+  0% {
+    -webkit-transform: translate(0, -34px);
+    -ms-transform: translate(0, -34px);
+    transform: translate(0, -34px);
+  }
+  50% {
+    -webkit-transform: translate(0, -7px);
+    -ms-transform: translate(0, -7px);
+    transform: translate(0, -7px);
+  }
+  100% {
+    -webkit-transform: translate(0, -34px);
+    -ms-transform: translate(0, -34px);
+    transform: translate(0, -34px);
+  }
+}
+@-o-keyframes ballon-1-animation {
+  0% {
+    -webkit-transform: translate(0, -34px);
+    -ms-transform: translate(0, -34px);
+    transform: translate(0, -34px);
+  }
+  50% {
+    -webkit-transform: translate(0, -7px);
+    -ms-transform: translate(0, -7px);
+    transform: translate(0, -7px);
+  }
+  100% {
+    -webkit-transform: translate(0, -34px);
+    -ms-transform: translate(0, -34px);
+    transform: translate(0, -34px);
+  }
+}
+@keyframes ballon-1-animation {
+  0% {
+    -webkit-transform: translate(0, -34px);
+    -ms-transform: translate(0, -34px);
+    transform: translate(0, -34px);
+  }
+  50% {
+    -webkit-transform: translate(0, -7px);
+    -ms-transform: translate(0, -7px);
+    transform: translate(0, -7px);
+  }
+  100% {
+    -webkit-transform: translate(0, -34px);
+    -ms-transform: translate(0, -34px);
+    transform: translate(0, -34px);
   }
 }
 .features-list-item {

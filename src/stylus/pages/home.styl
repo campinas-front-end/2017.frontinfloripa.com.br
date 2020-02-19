@@ -138,6 +138,11 @@
       height @width
       background-size 140px
 
+ .sympla
+
+    &>div
+      margin 40px auto
+
 .features
   position relative
   padding 2em 15em
@@ -153,27 +158,13 @@
 
   &:before
     content ''
-    width 300px
+    width 430px
     height 100%
     position absolute
-    top -80px
-    right 30px
-    background-image url($path-svg + 'astronaut.svg')
+    right 160px
+    background-image url($path-img + 'group.png')
     background-repeat no-repeat
-    background-position bottom
-    animation: ballon-1-animation 6s infinite
-    animation-timing-function: ease-in-out
-
-    @keyframes ballon-1-animation
-      0%
-        transform: translate(0, 30px)
-
-      50%
-        transform: translate(0, 0)
-
-      100%
-        transform: translate(0, 30px)
-
+    background-position center
 
     +between('tablet', 'desktop-small')
       width 190px
@@ -260,15 +251,27 @@
 
     &:before
       content ''
-      width 300px
+      width 600px
       height 100%
       position absolute
       top -30px
       position absolute
       right 30px
-      background-image url($path-svg + 'astronaut.svg')
+      background-image url($path-svg + 'balloons.svg')
       background-repeat no-repeat
-      background-position bottom
+      background-position center
+      animation: ballon-1-animation 6s infinite
+      animation-timing-function: ease-in-out
+      @keyframes ballon-1-animation
+        0%
+          transform: translate(0, -34px)
+
+        50%
+          transform: translate(0, -7px)
+
+        100%
+          transform: translate(0, -34px)
+
 
       +between('tablet', 'desktop-small')
         width 190px
@@ -1036,3 +1039,4 @@
 
       img
         max-width 50px
+
