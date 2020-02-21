@@ -396,6 +396,10 @@ body {
     background-size: 140px;
   }
 }
+.sympla-title {
+  font-size: 30px;
+  text-align: center;
+}
 .sympla>div {
   margin: 40px auto;
 }
@@ -462,11 +466,6 @@ body {
   }
 }
 @media only screen and (max-width: 580px) {
-  .features-column-title {
-    margin-bottom: 8em;
-  }
-}
-@media only screen and (max-width: 580px) {
   .features-column-title .button-ghost {
     display: none;
   }
@@ -505,19 +504,20 @@ body {
 }
 @media only screen and (max-width: 580px) {
   .features-title {
-    font-size: 4em;
+    font-size: 2.6em;
   }
 }
 .features-description {
   color: #fff;
   font-weight: normal;
   font-size: 2.4em;
-  margin: 2em 0;
+  margin: 1em 0;
   line-height: 1.6;
 }
 @media only screen and (max-width: 1000px) {
   .features-description {
-    font-size: 2em;
+    font-size: 1.6em;
+    margin: 1em 0 0;
   }
 }
 .features-list {
@@ -534,7 +534,7 @@ body {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 @media only screen and (min-width: 580px) {
   .features-list {
@@ -673,8 +673,14 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   .features-list-item__description {
-    font-size: 1.8em;
+    font-size: 1.6em;
+    margin: 1em 0 0;
   }
+}
+.past-events-container {
+  height: 100%;
+  background: #000;
+  overflow: hidden;
 }
 .past-events-container >:first-child {
   -ms-grid-template-areas: "imagem video1 imagem2 imagem2 imagem3 video3" "video2 imagem1 imagem2 imagem2 imagem4 imagem5";
@@ -1052,7 +1058,7 @@ body {
   -webkit-flex-basis: 45%;
   -ms-flex-basis: 45%;
   flex-basis: 45%;
-  background: #d0351d;
+  background: #f5aa1c;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1081,7 +1087,7 @@ body {
   content: '';
   width: 200px;
   height: 1000px;
-  background: #d0351d;
+  background: #f5aa1c;
   -webkit-transform: rotate(7deg);
   -ms-transform: rotate(7deg);
   transform: rotate(7deg);
@@ -1109,6 +1115,7 @@ body {
     width: 100%;
     padding-right: 2em;
     padding-left: 2em;
+    text-align: center;
   }
 }
 .location-content-discount {
@@ -1153,6 +1160,11 @@ body {
   position: relative;
   padding-left: 10em;
 }
+@media only screen and (max-width: 880px) {
+  .location-content-address {
+    padding-left: 0;
+  }
+}
 .location-content-address:before {
   content: '';
   width: 70px;
@@ -1165,6 +1177,11 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 0 0;
+}
+@media only screen and (max-width: 880px) {
+  .location-content-address:before {
+    display: none;
+  }
 }
 .location-content-address .button {
   font-size: 1.6em;
@@ -1498,7 +1515,7 @@ body {
 }
 .footer {
   padding: 4em 0;
-  background-color: #000;
+  background-color: #fff;
 }
 .footer-wrapper {
   max-width: 60%;
@@ -1531,6 +1548,12 @@ body {
   position: relative;
 }
 @media only screen and (max-width: 580px) {
+  .footer-column {
+    max-width: 100%;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 580px) {
   .footer-column.coc {
     text-align: center;
   }
@@ -1547,12 +1570,12 @@ body {
   }
 }
 .footer-email {
-  color: #fff;
+  color: #000;
   font-size: 1.4em;
   font-weight: 600;
 }
 .footer-link {
-  color: #fff;
+  color: #000;
   font-size: 1.4em;
   text-decoration: none;
   border-bottom: 1px solid #ddd;
