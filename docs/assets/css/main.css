@@ -396,12 +396,52 @@ body {
     background-size: 140px;
   }
 }
+.sympla {
+  background: #e4e0df;
+  padding: 2em 0;
+  height: 100vh;
+  display: grid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+@media only screen and (max-width: 580px) {
+  .sympla {
+    height: auto;
+    padding: 4em 0;
+  }
+}
 .sympla-title {
-  font-size: 30px;
+  color: #e13f26;
   text-align: center;
+  font-size: 7rem;
+  margin: 0;
+}
+@media only screen and (max-width: 1260px) {
+  .sympla-title {
+    font-size: 6em;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .sympla-title {
+    font-size: 2.6em;
+  }
 }
 .sympla>div {
   margin: 40px auto;
+  width: 600px;
+}
+@media only screen and (max-width: 1000px) {
+  .sympla>div {
+    width: 100%;
+    max-width: 100% !important;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .sympla>div {
+    margin: 40px auto 0;
+  }
 }
 .features {
   position: relative;
@@ -423,23 +463,25 @@ body {
 }
 @media only screen and (max-width: 1260px) {
   .features {
-    padding: 2em 2em;
+    padding: 4em 2em;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .features {
+    height: auto;
+    padding: 4em 2em;
   }
 }
 .features:before {
   content: '';
-  width: 430px;
+  width: 80%;
+  background-size: 50%;
+  background-position: right;
   height: 100%;
   position: absolute;
-  right: 160px;
+  right: 10px;
   background-image: url("../img/group.png");
   background-repeat: no-repeat;
-  background-position: center;
-}
-@media only screen and (min-width: 580px) and (max-width: 1000px) {
-  .features:before {
-    width: 190px;
-  }
 }
 @media only screen and (max-width: 580px) {
   .features:before {
@@ -488,7 +530,7 @@ body {
 }
 @media only screen and (max-width: 1260px) {
   .features-column-content {
-    padding: 2em 2em;
+    padding: 4em 2em;
   }
 }
 .features-title {
@@ -681,6 +723,11 @@ body {
   height: 100%;
   background: #000;
   overflow: hidden;
+}
+@media only screen and (max-width: 580px) {
+  .past-events-container {
+    height: auto;
+  }
 }
 .past-events-container >:first-child {
   -ms-grid-template-areas: "imagem video1 imagem2 imagem2 imagem3 video3" "video2 imagem1 imagem2 imagem2 imagem4 imagem5";

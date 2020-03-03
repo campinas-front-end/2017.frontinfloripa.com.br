@@ -1,3 +1,4 @@
+
 .header
   height 100%
   position relative
@@ -139,13 +140,38 @@
       background-size 140px
 
  .sympla
+    background #e4e0df
+    padding 2em 0
+    height 100vh
+    display grid
+    align-items center
+
+    +below('phone')
+      height auto
+      padding 4em 0
 
     &-title
-      font-size 30px
+      color $color-primary
       text-align center
+      font-size 7rem
+      margin 0
+
+      +below('desktop-large')
+        font-size 6.0em
+
+      +below('phone')
+        font-size 2.6em
 
     &>div
       margin 40px auto
+      width: 600px
+
+      +below('desktop-small')
+        width 100%
+        max-width 100%!important
+
+      +below('phone')
+        margin 40px auto 0
 
 .features
   position relative
@@ -158,20 +184,22 @@
   height 100vh
 
   +below('desktop-large')
-    padding 2em 2.0em
+    padding 4em 2.0em
+
+  +below('phone')
+    height auto
+    padding 4em 2em
 
   &:before
     content ''
-    width 430px
+    width 80%
+    background-size 50%
+    background-position right
     height 100%
     position absolute
-    right 160px
+    right 10px
     background-image url($path-img + 'group.png')
     background-repeat no-repeat
-    background-position center
-
-    +between('tablet', 'desktop-small')
-      width 190px
 
     +below('phone')
       display none
@@ -202,7 +230,8 @@
     display flex
 
     +below('desktop-large')
-       padding 2em 2.0em
+       padding 4em 2.0em
+
 
   // &:before
   //  content ''
@@ -319,6 +348,9 @@
     height 100%
     background #000
     overflow hidden
+
+    +below('phone')
+      height auto
 
     >:first-child
       grid-template-areas "imagem video1 imagem2 imagem2 imagem3 video3"\
@@ -709,7 +741,7 @@
 
         +below('tablet')
             display none
-      
+
       .button
         font-size 1.6em
         background #000000
@@ -984,7 +1016,7 @@
 
   &-column
     wrapper()
-    +below('phone') 
+    +below('phone')
       max-width 100%
       padding: 10px 0
 
