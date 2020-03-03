@@ -348,12 +348,9 @@
 
 .past-events
   &-container
-    height 100%
+    height auto
     background #000
     overflow hidden
-
-    +below('phone')
-      height auto
 
     >:first-child
       grid-template-areas "imagem video1 imagem2 imagem2 imagem3 video3"\
@@ -939,10 +936,12 @@
 .support
   position relative
   background #fff
-  padding 10em 0
+  padding 10em 0 0
+  border-bottom 1px solid #80797930
 
   &-wrapper
     wrapper()
+    margin 0 auto
 
   &-title
     text-align center
@@ -951,7 +950,7 @@
       position relative
       display inline-block
       font-size 4em
-      color $color-text
+      color $color-primary
       margin 0
       font-weight bold
       z-index 2
