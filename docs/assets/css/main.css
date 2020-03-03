@@ -474,14 +474,19 @@ body {
 }
 .features:before {
   content: '';
-  width: 80%;
-  background-size: 50%;
-  background-position: right;
+  width: 430px;
   height: 100%;
   position: absolute;
   right: 10px;
   background-image: url("../img/group.png");
   background-repeat: no-repeat;
+  background-position: right;
+}
+@media only screen and (min-width: 580px) and (max-width: 1000px) {
+  .features:before {
+    width: 80%;
+    background-size: 50%;
+  }
 }
 @media only screen and (max-width: 580px) {
   .features:before {

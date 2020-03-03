@@ -192,14 +192,17 @@
 
   &:before
     content ''
-    width 80%
-    background-size 50%
-    background-position right
+    width 430px
     height 100%
     position absolute
     right 10px
     background-image url($path-img + 'group.png')
     background-repeat no-repeat
+    background-position right
+
+    +between('tablet', 'desktop-small')
+      width 80%
+      background-size 50%
 
     +below('phone')
       display none
