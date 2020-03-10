@@ -855,240 +855,53 @@ body {
 }
 .speakers {
   position: relative;
-  padding: 14em 0;
-  background-color: #ececec;
-}
-.speakers-wrapper {
-  max-width: 60%;
-  position: relative;
+  padding: 2em 15em;
+  background-color: #e13f26;
 }
 .speakers-title {
-  text-align: center;
-}
-.speakers-title span {
-  position: relative;
-  display: inline-block;
-  font-size: 5em;
   color: #fff;
-  margin: 0;
+  font-size: 4.5em;
   font-weight: bold;
-  z-index: 2;
+  margin: 0;
+  letter-spacing: -0.05em;
 }
-.speakers-title span:before {
-  content: '';
-  width: 100%;
-  height: 10px;
-  border-bottom: 10px solid #e13f26;
-  -webkit-transform: rotate(-0.7deg);
-  -ms-transform: rotate(-0.7deg);
-  transform: rotate(-0.7deg);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+@media only screen and (max-width: 580px) {
+  .speakers-title {
+    font-size: 4em;
+  }
 }
-.speakers-title__presenter {
-  margin-top: 10em;
-}
-.speakers-title__presenter span:before {
-  border-color: #f8f8f8;
+.speakers-photo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .speakers-list {
+  list-style-type: none;
+  display: grid;
+  -ms-grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
   padding: 0;
-  margin: 0;
-  list-style: none;
-  margin-top: 10em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-.speakers-list__presenter {
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  margin-top: 9em;
 }
 .speakers-list-item {
-  position: relative;
-  margin-bottom: 4em;
-  background-color: #fff;
-  width: 100%;
-  padding: 1.6em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-}
-@media only screen and (max-width: 580px) {
-  .speakers-list-item {
-    display: block;
-    width: 98%;
-  }
-}
-.speakers-list-item__status-off {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  opacity: 0.3;
-}
-.speakers-list-item:before {
-  content: '';
-  width: 100px;
-  height: 100px;
-  background-color: #ececec;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: absolute;
-  bottom: -70px;
-  right: -70px;
-  border-left: 1px solid #ddd;
-}
-.speakers-list-item__presenter {
-  background: #d0351d;
-  max-width: 60%;
-}
-.speakers-list-item__presenter .speakers-list-item-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-.speakers-list-item__presenter .speakers-list-item__title {
-  font-size: 4em;
-}
-@media only screen and (max-width: 580px) {
-  .speakers-list-item__presenter .speakers-list-item__title {
-    font-size: 3em;
-  }
-}
-.speakers-list-item__presenter .speakers-list-item__company {
-  color: #fff;
-  margin-top: 0;
-  font-size: 2em;
-}
-.speakers-list-item__presenter:before {
-  border-color: #a62a17;
-}
-.speakers-list-item-photo {
-  -webkit-flex-basis: 20%;
-  -ms-flex-basis: 20%;
-  flex-basis: 20%;
-  -webkit-align-self: center;
-  -ms-align-self: center;
-  align-self: center;
-}
-@media only screen and (max-width: 580px) {
-  .speakers-list-item-photo {
-    width: 80%;
-    margin: 0 auto 1.6em;
-  }
-}
-.speakers-list-item-photo__presenter {
-  -webkit-flex-basis: 35%;
-  -ms-flex-basis: 35%;
-  flex-basis: 35%;
-  -webkit-align-self: center;
-  -ms-align-self: center;
-  align-self: center;
-}
-.speakers-list-item-content {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 2em;
-}
-@media only screen and (max-width: 580px) {
-  .speakers-list-item-content {
-    padding: 0;
-  }
-}
-.speakers-list-item__avatar {
-  max-width: 100%;
+  display: grid;
+  -ms-grid-template-rows: 280px 1fr;
+  grid-template-rows: 280px 1fr;
+  font-size: 1.4rem;
 }
 .speakers-list-item__title {
-  font-size: 2.8em;
-  font-weight: bold;
-  color: #e13f26;
+  font-size: 22px;
   margin: 0;
-  letter-spacing: -0.03em;
 }
-@media only screen and (max-width: 580px) {
-  .speakers-list-item__title {
-    text-align: center;
-  }
+.speakers-list-item__avatar {
+  width: 100%;
 }
-.speakers-list-item__title.speakers-list__presenter-title {
-  color: #fff;
-}
-.speakers-list-item__company {
-  display: block;
-  margin-top: 0.3em;
-  font-size: 1.6em;
-  color: #aaa;
-  font-weight: normal;
-}
-.speakers-list-item__social {
-  margin: 1.3em 0;
-}
-.speakers-list-item__social-link {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  text-indent: -9999em;
-  margin-right: 10px;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-.speakers-list-item__social-link:hover {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-.speakers-list-item__social-link.github {
-  background-image: url("../svg/icon-github.svg");
-}
-.speakers-list-item__social-link.twitter {
-  background-image: url("../svg/icon-twitter.svg");
-}
-@media only screen and (max-width: 580px) {
-  .speakers-list-item__social {
-    text-align: center;
-  }
-}
-.speakers-list-item__talk {
-  color: #e13f26;
-  font-weight: 600;
-  font-size: 2.2em;
-  margin: 0;
-  line-height: 1.1;
-}
-.speakers-list-item__talk-description {
-  color: #fff;
-  font-size: 1.6em;
-  margin: 0.8em 0;
-  line-height: 1.6;
+.speakers-list-item-content {
+  display: grid;
+  -ms-grid-template-rows: 60px 30px 40px 60px 1fr;
+  grid-template-rows: 60px 30px 40px 60px 1fr;
 }
 .location-wrapper {
   display: -webkit-box;

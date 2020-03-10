@@ -143,50 +143,41 @@ html
                 </a>
 
 
-    //- section.speakers
-    //-   .speakers-wrapper
-    //-     .speakers-title
-    //-       span Palestrantes &amp; Talks
-    //-     ul.speakers-list
-    //-       each speaker in speakers
-    //-         li.speakers-list-item.speakers-list-item__status-on(class=speaker.keynote ? "speakers-list-item__keynote" : "")
-    //-           .speakers-list-item-photo
-    //-             img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
-    //-           .speakers-list-item-content
-    //-             h3.speakers-list-item__title= speaker.name
-    //-             .speakers-list-item__corporation= speaker.corporation
-    //-               if speaker.keynote
-    //-                 span.speaker-list-item__title-keynote  Keynote
-    //-             span.speakers-list-item__company= speaker.company
-    //-             .speakers-list-item__social
-    //-               if speaker.github
-    //-                 a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
-    //-               if speaker.twitter
-    //-                 a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
-    //-               if speaker.twitter_dupla
-    //-                 a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter_dupla}` target='_blank') Twitter
-    //-             p.speakers-list-item__talk= speaker.talk
-    //-             p.speakers-list-item__talk-description= speaker.talk_description
-    //-     .speakers-title.speakers-title__presenter
-    //-       span Apresentação
-    //-     ul.speakers-list.speakers-list__presenter
-    //-       li.speakers-list-item.speakers-list-item__presenter
-    //-         .speakers-list-item-photo__presenter
-    //-           img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
-    //-         .speakers-list-item-content
-    //-           h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
-    //-           a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
+    section.speakers
+      .speakers-wrapper
+        .speakers-title
+          h1 Palestrantes &amp; Talks
+        ul.speakers-list
+          each speaker in speakers
+            li.speakers-list-item
+              .speakers-list-item-photo
+                img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
+              .speakers-list-item-content
+                h3.speakers-list-item__title= speaker.name
+                  if speaker.keynote
+                    span.speaker-list-item__title-keynote  Keynote
+                span.speakers-list-item__company= speaker.company
+                .speakers-list-item__social
+                  if speaker.github
+                    a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
+                  if speaker.twitter
+                    a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
+                  if speaker.twitter_dupla
+                    a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter_dupla}` target='_blank') Twitter
+                p.speakers-list-item__talk= speaker.talk
+                p.speakers-list-item__talk-description= speaker.talk_description
 
-    section.location
-      .location-wrapper
-        .location-column.content
-          .location-content
-            .location-content-address
-              h3.location-title Vitória Hotel Concept
-              p.location-description  Av. José de Souza Campos, 425 #[br] Bairro Nova Campinas #[br] Campinas - SP
-              a.button(href='https://goo.gl/maps/eZvhV5PUYMn' target='_blank') Como chegar
+        .speakers-title.speakers-title__presenter
+          span Apresentação
+        ul.speakers-list.speakers-list__presenter
+          li.speakers-list-item.speakers-list-item__presenter
+            .speakers-list-item-photo__presenter
+              img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
+            .speakers-list-item-content
+              h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
+              a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
 
-        .location-column.photo
+
 
     //- section.schedule
     //-   .speakers-title
@@ -220,6 +211,17 @@ html
     //-           li.support-item
     //-             a.support-link(href=`${item.website}` target='_blank')
     //-               img(src=`assets/img/support/${item.logo}`)
+
+  section.location
+    .location-wrapper
+      .location-column.content
+        .location-content
+          .location-content-address
+            h3.location-title Vitória Hotel Concept
+            p.location-description  Av. José de Souza Campos, 425 #[br] Bairro Nova Campinas #[br] Campinas - SP
+            a.button(href='https://goo.gl/maps/eZvhV5PUYMn' target='_blank') Como chegar
+
+      .location-column.photo
 
     footer.footer
       .footer-wrapper

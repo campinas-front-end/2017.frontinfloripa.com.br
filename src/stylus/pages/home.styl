@@ -454,184 +454,45 @@
 
 .speakers
   position relative
-  padding 14em 0
-  background-color #ececec
-
-  &-wrapper
-    wrapper()
+  padding 2em 15em
+  background-color $color-primary
 
   &-title
-    text-align center
+    color #fff
+    font-size 4.5em
+    font-weight bold
+    margin 0
+    letter-spacing -.05em
 
-    span
-      position relative
-      display inline-block
-      font-size 5em
-      color $color-text
-      margin 0
-      font-weight bold
-      z-index 2
+    +below('phone')
+      font-size 4em
 
-      &:before
-        content ''
-        width 100%
-        height 10px
-        border-bottom 10px solid $color-primary
-        transform rotate(-.7deg)
-        position absolute
-        bottom 0
-        left 0
-        z-index -1
-
-    &__presenter
-      margin-top 10em
-
-      span
-        &:before
-          border-color #f5f5f5 + 30%
+  &-photo
+    flex-direction column
 
   &-list
-    list-reset()
-    margin-top 10em
-    display flex
-    flex-wrap wrap
-    justify-content space-between
-    align-items center
-
-    &__presenter
-      justify-content center
-      margin-top 9em
+    list-style-type none
+    display grid
+    grid-template-columns repeat(5, 1fr)
+    gap 20px
+    padding 0
 
     &-item
-      position relative
-      margin-bottom 4em
-      background-color #fff
-      width 100%
-      padding 1.6em
-      display flex
-      overflow hidden
-
-      +below('phone')
-        display block
-        width 98%
-
-      &__status-off
-        opacity .3
-
-      &:before
-        content ''
-        width 100px
-        height 100px
-        background-color #ececec
-        transform rotate(45deg)
-        position absolute
-        bottom -70px
-        right -70px
-        border-left 1px solid #ddd
-
-      &__presenter
-        background $color-primary-alt
-        max-width 60%
-
-        .speakers-list-item-content
-          display flex
-          flex-wrap wrap
-          align-items center
-
-        .speakers-list-item__title
-          font-size 4em
-
-          +below('phone')
-            font-size 3em
-
-        .speakers-list-item__company
-          color #fff
-          margin-top 0
-          font-size 2em
-
-        &:before
-          border-color $color-primary-alt - 20%
-
-      &-photo
-        flex-basis 20%
-        align-self center
-
-        +below('phone')
-          width 80%
-          margin 0 auto 1.6em
-
-      &-photo__presenter
-        flex-basis 35%
-        align-self center
-
-      &-content
-        flex 1
-        padding-left 2em
-
-        +below('phone')
-          padding 0
-
-      &__avatar
-        max-width 100%
+      display grid
+      grid-template-rows 280px 1fr
+      font-size 1.4rem
 
       &__title
-        font-size 2.8em
-        font-weight bold
-        color $color-primary
+        font-size 22px
         margin 0
-        letter-spacing -.03em
 
-        +below('phone')
-          text-align center
+      &__avatar
+        width 100%
 
-        &.speakers-list__presenter-title
-          color #fff
+      &-content
+        display grid
+        grid-template-rows 60px 30px 40px 60px 1fr
 
-      &__company
-        display block
-        margin-top .3em
-        font-size 1.6em
-        color #aaa
-        font-weight normal
-
-      &__social
-        margin 1.3em 0
-
-        &-link
-          display inline-block
-          width 25px
-          height @width
-          background-position center center
-          background-repeat no-repeat
-          background-size 100% auto
-          text-indent -9999em
-          margin-right 10px
-          transition opacity .3s ease
-
-          &:hover
-            opacity .7
-
-          &.github
-            background-image url($path-svg + 'icon-github.svg')
-
-          &.twitter
-            background-image url($path-svg + 'icon-twitter.svg')
-
-        +below('phone')
-          text-align center
-
-      &__talk
-        color $color-primary
-        font-weight 600
-        font-size 2.2em
-        margin 0
-        line-height 1.1
-
-      &__talk-description
-        color $color-default
-        font-size 1.6em
-        margin .8em 0
-        line-height 1.6
 
 .location
   &-wrapper

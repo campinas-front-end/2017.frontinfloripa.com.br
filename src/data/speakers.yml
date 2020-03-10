@@ -1,6 +1,6 @@
 -
   name: "Paulo Silveira"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "paulo.jpeg"
   twitter: "paulo_caelum"
   talk: "Carreiras Hipsters: os novos profissionais de tecnologia"
@@ -9,7 +9,7 @@
   keynote: "yes"
 -
   name: "Aléxia Balionis"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "alexia.jpg"
   twitter: "balionis"
   talk: "1, 2, 3, Testando"
@@ -17,7 +17,7 @@
   status: "on"
 -
   name: "Ana Coimbra"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "ana.jpg"
   twitter: "anacoimbrag"
   talk: "A dive into Cors - aprofundando nas políticas de Cors e preflight"
@@ -25,7 +25,7 @@
   status: "on"
 -
   name: "Carla Vieira"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "carla.jpg"
   twitter: "carlaprvieira"
   talk: "O que nunca te disseram sobre síndrome do impostor e ansiedade."
@@ -33,7 +33,7 @@
   status: "on"
 -
   name: "Hugo Bessa"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "hugo.jpg"
   twitter: "hugobessaa"
   talk: "3 hábitos para escrever CSS escalável."
@@ -41,7 +41,7 @@
   status: "on"
 -
   name: "Lari Maza"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "lari.jpg"
   twitter: "larimaza"
   talk: "Nasce um Astro: Como implementamos um design system"
@@ -49,7 +49,7 @@
   status: "on"
 -
   name: "Livia G. Martins e Michele Frason"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "livia_michele.png"
   twitter: "liviagabos"
   twitter_dupla: "mi_frasson"
@@ -58,7 +58,7 @@
   status: "on"
 -
   name: "Leandro Diniz"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "leandro.jpg"
   twitter: "leandro_diniz"
   talk: "A importância do desenvolvedor front-end na experência do usuário."
@@ -66,7 +66,7 @@
   status: "on"
 -
   name: "Rodrigo Pokemaobr"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "pokemao.jpg"
   twitter: "pokemaobr"
   talk: "A Alquimia Front-End"
@@ -74,7 +74,7 @@
   status: "on"
 -
   name: "Stefano Diem Benatti"
-  corporation: "NOME DA EMPRESA"
+  company: "NOME DA EMPRESA"
   avatar: "stefano.jpg"
   twitter: "teonimesic"
   talk: "Trabalho Remoto Sustentável"
