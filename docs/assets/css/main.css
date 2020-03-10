@@ -725,9 +725,14 @@ body {
   }
 }
 .past-events-container {
-  height: auto;
+  height: 100%;
   background: #000;
   overflow: hidden;
+}
+@media only screen and (max-width: 580px) {
+  .past-events-container {
+    height: auto;
+  }
 }
 .past-events-container >:first-child {
   -ms-grid-template-areas: "imagem video1 imagem2 imagem2 imagem3 video3" "video2 imagem1 imagem2 imagem2 imagem4 imagem5";
@@ -1298,13 +1303,11 @@ body {
 .support {
   position: relative;
   background: #fff;
-  padding: 10em 0 0;
-  border-bottom: 1px solid rgba(128,121,121,0.188);
+  padding: 10em 0;
 }
 .support-wrapper {
   max-width: 60%;
   position: relative;
-  margin: 0 auto;
 }
 .support-title {
   text-align: center;
@@ -1313,7 +1316,7 @@ body {
   position: relative;
   display: inline-block;
   font-size: 4em;
-  color: #e13f26;
+  color: #fff;
   margin: 0;
   font-weight: bold;
   z-index: 2;
