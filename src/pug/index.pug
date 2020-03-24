@@ -33,17 +33,21 @@ html
       .header-wrapper
         .header-content
           h1.header-logo #{config.event.name}
-          h2.header-info 06/Junho/2020 #[span &bull;] 8h #[span &bull;] #[a(href='https://goo.gl/maps/67rKXjWTvqM2' target='_blank') Hotel Vitória Concept]
+          // h2.header-info 06/Junho/2020 #[span &bull;] 8h #[span &bull;] #[a(href='https://goo.gl/maps/67rKXjWTvqM2' target='_blank') Hotel Vitória Concept]
+          h2.header-info Evento cancelado!
           //- a.button(href=`${config.tickets.url}` target='_blank') Inscreva-se
 
-          div.header-support
-            a.header-support__link(href=`${config.papers.url}` target='_blank') Quero palestrar
+          .canceled-event Após muita conversa e deliberação da equipe organizadora, decidimos, para a segurança e saúde de todos, cancelar a terceira edição do Front in Campinas, que aconteceria no dia 6 de junho de 2020, por conta da pandemia do novo #Coronavírus.
+
+          //- div.header-support
+          //-   a.header-support__link(href=`${config.papers.url}` target='_blank') Quero palestrar
             //- span.header-support__divisor |
             //- a.header-support__link(href=`${config.sponsorship.url}` target='_blank') Quero patrocinar
-    section.sympla
-      h2.sympla-title Garanta<br/> seu ingresso
-      <div id="sympla-widget-786543" height="auto"></div>
-      <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/786543"></script>
+
+    //- section.sympla
+    //-   h2.sympla-title Garanta<br/> seu ingresso
+    //-   <div id="sympla-widget-786543" height="auto"></div>
+    //-   <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/786543"></script>
 
     section.features
       .features-wrapper
@@ -143,39 +147,40 @@ html
                 </a>
 
 
-    section.speakers
-      .speakers-wrapper
-        .speakers-title
-          h1 Palestrantes &amp; Talks
-        ul.speakers-list
-          each speaker in speakers
-            li.speakers-list-item
-              .speakers-list-item-photo
-                img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
-              .speakers-list-item-content
-                h3.speakers-list-item__title= speaker.name
-                  if speaker.keynote
-                    span.speaker-list-item__title-keynote  Keynote
-                span.speakers-list-item__company= speaker.company
-                .speakers-list-item__social
-                  if speaker.github
-                    a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
-                  if speaker.twitter
-                    a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
-                  if speaker.twitter_dupla
-                    a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter_dupla}` target='_blank') Twitter
-                p.speakers-list-item__talk= speaker.talk
-                p.speakers-list-item__talk-description= speaker.talk_description
+    //- section.speakers
+    //-   .speakers-wrapper
+    //-     .speakers-title
+    //-       h1 Palestrantes &amp; Talks
+    //-     ul.speakers-list
+    //-       each speaker in speakers
+    //-         li.speakers-list-item
+    //-           .speakers-list-item-photo
+    //-             img.speakers-list-item__avatar(src=`assets/img/speakers/${speaker.avatar}`)
+    //-           .speakers-list-item-content
+    //-             h3.speakers-list-item__title= speaker.name
+    //-               if speaker.keynote
+    //-                 span.speaker-list-item__title-keynote  Keynote
+    //-             span.speakers-list-item__company= speaker.company
+    //-             .speakers-list-item__social
+    //-               if speaker.github
+    //-                 a.speakers-list-item__social-link.github(href=`https://github.com/${speaker.github}` target='_blank') Github
+    //-               if speaker.twitter
+    //-                 a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
+    //-               if speaker.twitter_dupla
+    //-                 a.speakers-list-item__social-link.twitter(href=`https://twitter.com/${speaker.twitter_dupla}` target='_blank') Twitter
+    //-             p.speakers-list-item__talk= speaker.talk
+    //-             p.speakers-list-item__talk-description= speaker.talk_description
 
-        .speakers-title.speakers-title__presenter
-          span Apresentação
-        ul.speakers-list.speakers-list__presenter
-          li.speakers-list-item.speakers-list-item__presenter
-            .speakers-list-item-photo__presenter
-              img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
-            .speakers-list-item-content
-              h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
-              a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
+
+    //-     .speakers-title.speakers-title__presenter
+    //-       span Apresentação
+    //-     ul.speakers-list.speakers-list__presenter
+    //-       li.speakers-list-item.speakers-list-item__presenter
+    //-         .speakers-list-item-photo__presenter
+    //-           img.speakers-list-item__avatar(src=`assets/img/speakers/keilla.jpg`)
+    //-         .speakers-list-item-content
+    //-           h3.speakers-list-item__title.speakers-list__presenter-title Keilla Menezes
+    //-           a.speakers-list-item__company(href=`https://twitter.com/keillamenezes_` target='_blank') @keillamenezes_
 
 
 
